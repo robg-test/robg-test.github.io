@@ -1,0 +1,44 @@
+{
+  "resourceType": "List",
+  "id": "6f3d710e-3f14-11ed-ba0b-0a58a9feac02-consultation",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/4d0a3e14-35a0-11ed-94d2-0adf61f57152"
+  },
+  "encounter": {
+    "reference": "Encounter/6f3d710e-3f14-11ed-ba0b-0a58a9feac02"
+  },
+  "date": "2022-09-28T11:08:19+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "325851000000107",
+        "display": "Consultation"
+      }
+    ]
+  },
+  "title": "Consultation by telephone",
+  "entry": [
+    {
+      "item": {
+        "reference": "List/6f49b7fc-3f14-11ed-9735-0a58a9feac02"
+      }
+    }
+  ]
+}

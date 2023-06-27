@@ -1,0 +1,54 @@
+{
+  "resourceType": "List",
+  "id": "94da33d6-3986-11ed-a404-068ed94095f6",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24781000000107",
+        "display": "Category (EHR)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/4d0a3e14-35a0-11ed-94d2-0adf61f57152"
+  },
+  "encounter": {
+    "reference": "Encounter/84cf2be0-3986-11ed-91af-068ed94095f6"
+  },
+  "date": "2022-09-21T09:22:23+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "title": "Examination",
+  "entry": [
+    {
+      "item": {
+        "reference": "Observation/a479a5e2-3986-11ed-aaed-068ed94095f6"
+      }
+    },
+    {
+      "item": {
+        "reference": "Observation/cbe57a5a-aedb-11ed-849f-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationRequest/mr-3241b126-3987-11ed-81e8-068ed94095f6"
+      }
+    }
+  ]
+}

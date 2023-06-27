@@ -1,0 +1,84 @@
+{
+  "resourceType": "Encounter",
+  "id": "4c13f55a-fa2f-11ed-84ae-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "4c13f55a-fa2f-11ed-84ae-0a58a9feac02"
+    }
+  ],
+  "status": "finished",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "325861000000105",
+          "display": "Face to face consultation"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/86e984a6-b64c-11ec-bc77-0a58a9feac02"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "PPRF",
+              "display": "Primary Performer"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-ParticipantType-1",
+              "code": "REC",
+              "display": "Recorder"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+      }
+    }
+  ],
+  "period": {
+    "start": "2023-05-24T13:33:00+01:00",
+    "end": "2023-05-24T13:37:00+01:00"
+  },
+  "length": {
+    "value": 4,
+    "unit": "min",
+    "system": "http://unitsofmeasure.org",
+    "code": "min"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/89dfcc66-db44-11ec-8e01-0a58a9feac02"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/N82090"
+  }
+}

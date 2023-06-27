@@ -1,0 +1,44 @@
+{
+  "resourceType": "List",
+  "id": "734d3458-4975-11ed-9e36-0a58a9feac02-consultation",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/4d0a3e14-35a0-11ed-94d2-0adf61f57152"
+  },
+  "encounter": {
+    "reference": "Encounter/734d3458-4975-11ed-9e36-0a58a9feac02"
+  },
+  "date": "2022-10-11T04:02:29+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "325851000000107",
+        "display": "Consultation"
+      }
+    ]
+  },
+  "title": "Face to face consultation",
+  "entry": [
+    {
+      "item": {
+        "reference": "List/7354581e-4975-11ed-8686-0a58a9feac02"
+      }
+    }
+  ]
+}

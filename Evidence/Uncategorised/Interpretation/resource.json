@@ -1,0 +1,114 @@
+{
+  "resourceType": "Observation",
+  "id": "b2bff1e2-4fb6-11ed-b89c-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "b2bff1e2-4fb6-11ed-b89c-0a58a9feac02"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "354711000000101",
+        "display": "Ulcer surface area",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "666581000000111"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/e87d9102-cac5-11ec-abac-0ad8d1a72d1a"
+  },
+  "effectiveDateTime": "2020-10-06T23:59:00+01:00",
+  "issued": "2022-10-19",
+  "performer": [
+    {
+      "reference": "Practitioner/7a2d9ef1fb5e2276c8043e8f5477f2cd"
+    },
+    {
+      "reference": "Organization/8965b965323a78e53f73f79297c5533e"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "442387004",
+        "display": "Increased relative to previous",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "2818804017"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371879000",
+        "display": "Abnormally high",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1210469013"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "comment": "Lorem ipsum dolor sit amet. Et adipisci blanditiis et accusantium consequuntur qui omnis explicabo ut nobis repellendus quasi reprehenderit. Est ullam voluptate aut dicta laborum et rerum nisi non illum dolor ea quas consequatur. Aut commodi tenetur est aliquid nihil ut natus ducimus et adipisci quae sit expedita internos. Vel fuga vitae non fugiat deleniti et aspernatur ipsam ut nobis harum. Est facilis autem est quia rerum hic molestiae molestiae qui molestiae enim. Non natus alias aut dolorem suscipit eum magni quis ut enim doloribus qui minima illo quo ipsa repellendus sit alias quaerat. Qui expedita asperiores aut voluptatibus internos quo dolor laborum 33 vero omnis ut voluptatum galisum ut quam consectetur a reprehenderit quas. Hic consectetur atque et voluptates provident et nihil atque sit expedita eligendi hic officiis beatae aut optio alias et omnis dolorum. Est dignissimos architecto eos magnam explicabo id voluptates sunt eum laboriosam voluptatem aut possimus numquam nam pariatur nihil ea facilis laboriosam. Et natus galisum ut odio impedit et modi similique ut voluptas numquam qui impedit laborum. Aut atque rerum ea itaque dolores ea architecto quia in sint omnis qui eaque animi est modi atque id rerum ducimus. Et velit nemo ad veritatis libero et dolor neque ad sint accusantium et molestias consequatur. Sit iure ducimus aut rerum consequuntur qui earum architecto a rerum reprehenderit et magni soluta. At accusantium quibusdam hic corrupti dignissimos qui sequi quasi.\n\nEst placeat voluptates et voluptatem dignissimos non repellat veniam et nihil ullam et odit eligendi est facilis illum eos temporibus dolor. Quo vitae molestiae ut facere minus est veniam asperiores ut alias quia ea commodi laboriosam qui magnam enim et molestias dolorem! Sit obcaecati officiis ut facere voluptas non nesciunt sunt vel ipsum fugit et tempora odio ea quaerat tempora. Ut magni labore non facere deserunt ad illum dolor. Et minus est aliquid accusamus ut omnis aliquam in inventore aliquam. Et velit totam non molestiae nesciunt 33 autem dolor et accusamus nihil id libero animi aut molestiae dolorem sit vitae earum? Aut error aliquam vel possimus totam qui saepe maiores. Est rerum fugiat eum veniam iste ut blanditiis laboriosam qui ullam consequatur? At quis fugit sed voluptatem culpa qui esse reiciendis! Aut possimus adipisci et Quis quibusdam nam amet aliquam aut dolore ut iure dolore id atque sint! Est eligendi consequatur vel odit numquam nam aspernatur sunt et internos magnam ab sapiente nostrum. Ex similique nisi non laudantium accusamus est illum velit et accusamus enim. A repellat atque et quia quae ut sequi expedita aut illo error sit omnis perspiciatis. Cum quaerat dolores et Quis nihil et minus nulla ut animi veniam hic dolores quasi cum impedit exercitationem nam nostrum suscipit.\n\nAut exercitationem tenetur aut tempora quis aut eius quaerat. Quo reprehenderit veritatis non numquam repellendus est ipsam possimus ea repudiandae aliquam eos Quis animi et distinctio velit ea harum. Qui laudantium molestiae ea nemo incidunt est repudiandae rerum sit illo perspiciatis. Qui aperiam voluptatem non quasi eius et nobis culpa! Sit quia earum qui nulla quidem eum quae facilis non eaque modi ut eligendi exercitationem in perferendis quia. Nam sint quibusdam ea repudiandae perferendis aut minima amet id obcaecati enim et porro ipsum nam dolor doloribus ex consequatur sunt. Id sunt voluptatem ut obcaecati inventore est esse soluta aut blanditiis iste 33 expedita necessitatibus et nemo repellendus. Qui molestias galisum est ipsum numquam 33 aliquam rerum in voluptates veritatis qui saepe sapiente est exercitationem adipisci. Eos autem repudiandae qui commodi dicta in quis repellendus est quia quia qui necessitatibus animi qui magnam laudantium. Ea deserunt velit eum deleniti error sed dicta iure ea maxime dignissimos ut perferendis voluptatem id provident fuga ut libero neque. In ducimus consectetur et perferendis illum eum vero voluptatem. Eum assumenda dolore ut harum cupiditate qui harum deserunt ut quia veritatis. Est quasi voluptatem ut sequi sint qui laboriosam unde ut culpa quibusdam et alias enim in sint excepturi et maiores voluptatibus. Ut fugit magnam et deleniti dignissimos et dolorem magni est voluptatibus recusandae sed atque quaerat sit exercitationem consequuntur.",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "783038006",
+        "display": "Structure of inferior aspect of palate",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "3757216019"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Roof of mouth"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

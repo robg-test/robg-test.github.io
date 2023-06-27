@@ -1,0 +1,11 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Searchset-Bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "id": null,
+  "entry": []
+}

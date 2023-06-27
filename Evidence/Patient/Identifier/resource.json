@@ -1,0 +1,100 @@
+{
+  "resourceType": "Patient",
+  "id": "4d0a3e14-35a0-11ed-94d2-0adf61f57152",
+  "meta": {
+    "versionId": "efc2818b5cc9029b1ac0daa873e31686",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+      "extension": [
+        {
+          "url": "registrationPeriod",
+          "valuePeriod": {
+            "start": "2022-09-16",
+            "end": "2023-12-08"
+          }
+        },
+        {
+          "url": "registrationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                "code": "T",
+                "display": "Temporary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                "code": "01",
+                "display": "Number present and verified"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9727400299"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "SMOUT",
+      "prefix": [
+        "Mr"
+      ],
+      "given": [
+        "Ivor",
+        "Brett"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+441454121214",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "+447777121214",
+      "use": "mobile"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1943-03-07",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "13 Kerry Hill",
+        "Low Moor"
+      ],
+      "city": "Leeds",
+      "district": "West Yorkshire",
+      "postalCode": "LS18 1AE",
+      "country": "GBR"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/N82090"
+  }
+}

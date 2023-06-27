@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "d778ecd4-4ed3-11ed-859c-0a9232a36df2",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "d778ecd4-4ed3-11ed-859c-0a9232a36df2"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "386716001",
+        "display": "Distance visual acuity - left eye",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1480851019"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/e87d9102-cac5-11ec-abac-0ad8d1a72d1a"
+  },
+  "effectiveDateTime": "2022-10-18",
+  "issued": "2022-10-18",
+  "performer": [
+    {
+      "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+    },
+    {
+      "reference": "Organization/N82090"
+    }
+  ],
+  "valueString": "No change in peripheral vision. Distance vision stable, since last assessment."
+}

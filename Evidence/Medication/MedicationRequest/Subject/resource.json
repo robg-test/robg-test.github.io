@@ -1,0 +1,71 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "5d36c858-7582-11ed-a66f-0af98851dc5c",
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "5d36c858-7582-11ed-a66f-0af98851dc5c"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+            "code": "acute",
+            "display": "Acute"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mr-5d3648f6-7582-11ed-8c8e-0af98851dc5c"
+    }
+  ],
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/439011000001108"
+  },
+  "subject": {
+    "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+  },
+  "authoredOn": "2022-12-06",
+  "recorder": {
+    "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+  },
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+    }
+  },
+  "note": [
+    {
+      "text": "Endorsements: CC"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "1 tablet - ONCE a DAY - oral - for 21 days"
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2022-12-06",
+      "end": "2022-12-06"
+    },
+    "quantity": {
+      "value": 21,
+      "unit": "tablet"
+    }
+  }
+}

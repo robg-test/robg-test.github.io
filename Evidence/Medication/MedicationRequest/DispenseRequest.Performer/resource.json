@@ -1,0 +1,72 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "62fee2ba-69c1-11ed-aca8-0a0382d71aaa",
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "62fee2ba-69c1-11ed-aca8-0a0382d71aaa"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+            "code": "repeat",
+            "display": "Repeat"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mr-62fe7578-69c1-11ed-adf5-0a0382d71aaa"
+    }
+  ],
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/36566111000001100"
+  },
+  "subject": {
+    "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+  },
+  "authoredOn": "2022-11-23",
+  "recorder": {
+    "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+  },
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+    }
+  },
+  "dosageInstruction": [
+    {
+      "text": "As per manufacturer instructions on box."
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2022-11-23",
+      "end": "2022-11-23"
+    },
+    "quantity": {
+      "value": 2.5,
+      "unit": "ml"
+    },
+    "expectedSupplyDuration": {
+      "value": 1,
+      "system": "http://unitsofmeasure.org",
+      "code": "d",
+      "unit": "day"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "ms-6b0b0728-ac87-11ed-8417-0a58a9feac02",
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "ms-6b0b0728-ac87-11ed-8417-0a58a9feac02"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+            "code": "prescribed-at-gp-practice",
+            "display": "Prescribed at GP practice"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "stopped",
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mr-6b0b0728-ac87-11ed-8417-0a58a9feac02"
+    }
+  ],
+  "medicationReference": {
+    "reference": "Medication/24662711000001100"
+  },
+  "effectivePeriod": {
+    "start": "2023-02-14",
+    "end": "2023-02-14"
+  },
+  "dateAsserted": "2023-02-14",
+  "subject": {
+    "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+  },
+  "taken": "unk",
+  "dosage": [
+    {
+      "text": "1 capsule - ONCE a DAY - oral"
+    }
+  ]
+}

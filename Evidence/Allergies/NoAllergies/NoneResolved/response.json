@@ -1,0 +1,296 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
+    ]
+  },
+  "id": "79ad5495-f4ee-4007-9a10-2ab175ab805c",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b8d559f2-38c6-11ed-882d-068ed94095f6",
+        "meta": {
+          "versionId": "bea2090d2930599bf8a59ed145112fb1",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+            "extension": [
+              {
+                "url": "registrationPeriod",
+                "valuePeriod": {
+                  "start": "2022-09-20",
+                  "end": "2023-12-08"
+                }
+              },
+              {
+                "url": "registrationType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                      "code": "T",
+                      "display": "Temporary"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9727400957"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "WOOD",
+            "prefix": [
+              "Mr"
+            ],
+            "given": [
+              "Adrian"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+441454121205",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "+447777121205",
+            "use": "mobile"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1964-02-22",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "16 Bond Sreet",
+              "High Moor"
+            ],
+            "city": "Leeds",
+            "district": "West Yorkshire",
+            "postalCode": "LS26 1AF",
+            "country": "GBR"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "N82090",
+        "meta": {
+          "versionId": "0ee3a2e01efdc6841424aee9a0640395",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "N82090"
+          }
+        ],
+        "active": true,
+        "name": "Green Lane Medical Centre",
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "1 Main St"
+            ],
+            "city": "London",
+            "postalCode": "W1A 1AA",
+            "country": "GBR"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+442071231234",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "+442071231235",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "gp.connect.test.site@medicus.health",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Allergies and adverse reactions",
+        "code": {
+          "coding": [
+            {
+              "display": "Allergies and adverse reactions",
+              "system": "http://snomed.info/sct",
+              "code": "886921000000105"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+        },
+        "note": [
+          {
+            "text": "Information not available."
+          }
+        ],
+        "emptyReason": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ListEmptyReasonCode-1",
+              "code": "no-content-recorded",
+              "display": "No Content Recorded"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "AllergyIntolerance",
+            "id": "cdeb6218-0b62-11ee-abbd-0a58a9feac02",
+            "identifier": [
+              {
+                "system": "https://medicus.health",
+                "value": "cdeb6218-0b62-11ee-abbd-0a58a9feac02"
+              }
+            ],
+            "meta": {
+              "profile": [
+                "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1"
+              ]
+            },
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-AllergyIntoleranceEnd-1",
+                "extension": [
+                  {
+                    "url": "endDate",
+                    "valueDateTime": "2023-06-01T00:00:00+01:00"
+                  },
+                  {
+                    "url": "reasonEnded",
+                    "valueString": "test"
+                  }
+                ]
+              }
+            ],
+            "verificationStatus": "unconfirmed",
+            "assertedDate": "2023-06-15T00:00:00+01:00",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "91934008",
+                  "display": "Allergy to nut",
+                  "extension": [
+                    {
+                      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                      "extension": [
+                        {
+                          "url": "descriptionId",
+                          "valueId": "3286105013"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "clinicalStatus": "resolved",
+            "patient": {
+              "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+            },
+            "recorder": {
+              "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+            },
+            "category": [
+              "medication"
+            ]
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Ended allergies",
+        "code": {
+          "coding": [
+            {
+              "display": "Ended allergies",
+              "system": "http://snomed.info/sct",
+              "code": "1103671000000101"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "#cdeb6218-0b62-11ee-abbd-0a58a9feac02"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
