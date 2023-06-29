@@ -1,0 +1,79 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mr-091b1f84-6048-11ed-b189-0a7ec8f5e518",
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "mr-091b1f84-6048-11ed-b189-0a7ec8f5e518"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+            "code": "repeat-dispensing",
+            "display": "Repeat dispensing"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+      "extension": [
+        {
+          "url": "numberOfRepeatPrescriptionsAllowed",
+          "valueUnsignedInt": 6
+        },
+        {
+          "url": "numberOfRepeatPrescriptionsIssued",
+          "valueUnsignedInt": 0
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "medicationReference": {
+    "reference": "Medication/39695411000001103"
+  },
+  "subject": {
+    "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+  },
+  "authoredOn": "2022-11-09",
+  "recorder": {
+    "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+  },
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+    }
+  },
+  "dosageInstruction": [
+    {
+      "text": "1 tablet - ONCE a DAY - oral"
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2022-11-09"
+    },
+    "quantity": {
+      "value": 28,
+      "unit": "tablet"
+    },
+    "expectedSupplyDuration": {
+      "value": 28,
+      "system": "http://unitsofmeasure.org",
+      "code": "d",
+      "unit": "day"
+    }
+  }
+}

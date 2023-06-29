@@ -1,0 +1,38 @@
+{
+  "resourceType": "Location",
+  "id": "89dfcc66-db44-11ec-8e01-0a58a9feac02",
+  "meta": {
+    "versionId": "dd6ec125cba59ae516fbeb3b6f5df48f",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Location-1"
+    ]
+  },
+  "status": "active",
+  "name": "Test Site for Consultations",
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "8 Spen Crescent"
+      ],
+      "city": "Leeds",
+      "postalCode": "LS16 5ET",
+      "country": "GBR"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+441134568907",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "+441134648907",
+      "use": "work"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/N82090"
+  }
+}

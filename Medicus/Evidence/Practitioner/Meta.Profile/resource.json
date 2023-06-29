@@ -1,0 +1,18 @@
+{
+  "resourceType": "Practitioner",
+  "id": "8b9d1140-9bbf-11ec-991d-0ae647c12c72",
+  "meta": {
+    "versionId": "2e714249cff9cd996498c72a0809b2a7",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+    ]
+  },
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Martin Hillyard",
+      "family": "Martin Hillyard"
+    }
+  ]
+}

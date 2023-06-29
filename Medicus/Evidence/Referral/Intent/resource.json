@@ -1,0 +1,69 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "e9cfc102-f909-11ec-af9f-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "e9cfc102-f909-11ec-af9f-0a58a9feac02"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/UBRN",
+      "value": "000049652322"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "routine",
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "authoredOn": "2022-07-01T07:49:14+01:00",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/bec0705a-dcf9-11ec-9729-0adf11b1c68e"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/N82090"
+    }
+  },
+  "recipient": [
+    {
+      "reference": "Organization/ea83ca9e-f909-11ec-8381-0a58a9feac02-provider-organisation"
+    },
+    {
+      "reference": "HealthcareService/ea83ca9e-f909-11ec-8381-0a58a9feac02-provider-healthcare-service"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "183521007",
+          "display": "Referral to neurology service",
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+              "extension": [
+                {
+                  "url": "descriptionId",
+                  "valueId": "283604010"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "DocumentReference/ers-referral-attachment--eba794f0-f909-11ec-8fc9-0a58a9feac02"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "1e6bf4f0-f89e-11ed-9789-0a58a9feac02",
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "1e6bf4f0-f89e-11ed-9789-0a58a9feac02"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter",
+      "valueReference": {
+        "reference": "Encounter/b2377e4e-f89d-11ed-b0ff-0a58a9feac02"
+      }
+    }
+  ],
+  "verificationStatus": "unconfirmed",
+  "assertedDate": "2023-05-22T00:00:00+01:00",
+  "onsetDateTime": "2023-03-15",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "738069006",
+        "display": "Intolerance to cow milk",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "3530780014"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Cow milk intolerance"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "clinicalStatus": "active",
+  "patient": {
+    "reference": "Patient/8ee91f68-b64c-11ec-aaf7-0a58a9feac02"
+  },
+  "recorder": {
+    "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+  },
+  "category": [
+    "medication"
+  ],
+  "note": [
+    {
+      "text": "Certainty: Confirmed by Challenge Testing"
+    }
+  ],
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "71393004",
+              "display": "Soreness",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "118595019"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "severity": "mild"
+    }
+  ]
+}

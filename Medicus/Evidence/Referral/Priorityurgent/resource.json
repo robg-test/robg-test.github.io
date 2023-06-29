@@ -1,0 +1,96 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "29129834-caee-11ec-86d5-06f925533f3a",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "29129834-caee-11ec-86d5-06f925533f3a"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "urgent",
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "authoredOn": "2022-05-01",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/90d8388a-9721-11ec-91e1-063fa650175a"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/N82090"
+    }
+  },
+  "specialty": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "722138006",
+        "display": "Physiotherapy",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "3330862018"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "recipient": [
+    {
+      "reference": "Practitioner/29129834-caee-11ec-86d5-06f925533f3a-provider-practitioner"
+    },
+    {
+      "reference": "Organization/29129834-caee-11ec-86d5-06f925533f3a-provider-organisation"
+    },
+    {
+      "reference": "HealthcareService/29129834-caee-11ec-86d5-06f925533f3a-provider-healthcare-service"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "183521007",
+          "display": "Referral to neurology service",
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+              "extension": [
+                {
+                  "url": "descriptionId",
+                  "valueId": "283605011"
+                },
+                {
+                  "url": "descriptionDisplay",
+                  "valueString": "Neurological referral"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "¬`!\"£$%^&*()>//\\\\\nqwerty line1\nasdf line 2",
+  "supportingInfo": [
+    {
+      "reference": "DocumentReference/manual-referral-attachment--2920483a-caee-11ec-ab41-06f925533f3a"
+    },
+    {
+      "reference": "DocumentReference/manual-referral-attachment--2914935a-caee-11ec-9a71-06f925533f3a"
+    }
+  ]
+}

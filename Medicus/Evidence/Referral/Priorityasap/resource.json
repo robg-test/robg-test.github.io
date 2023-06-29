@@ -1,0 +1,88 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "838b4400-14da-11ee-8969-06a049da81fc",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "838b4400-14da-11ee-8969-06a049da81fc"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "asap",
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "authoredOn": "2023-06-27",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/N82090"
+    }
+  },
+  "specialty": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "394579002",
+        "display": "Cardiology",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1488309017"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "recipient": [
+    {
+      "reference": "Practitioner/838b4400-14da-11ee-8969-06a049da81fc-provider-practitioner"
+    },
+    {
+      "reference": "Organization/838b4400-14da-11ee-8969-06a049da81fc-provider-organisation"
+    },
+    {
+      "reference": "HealthcareService/838b4400-14da-11ee-8969-06a049da81fc-provider-healthcare-service"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "183519002",
+          "display": "Referral to cardiology service",
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+              "extension": [
+                {
+                  "url": "descriptionId",
+                  "valueId": "283601019"
+                },
+                {
+                  "url": "descriptionDisplay",
+                  "valueString": "Cardiological referral"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "THIS IS FOR ASAP"
+}

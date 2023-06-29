@@ -1,0 +1,139 @@
+{
+  "resourceType": "Immunization",
+  "id": "1d468fde-c214-11ec-ba50-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+      "valueDateTime": "2022-04-22T09:13:38+01:00"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "865061000000108",
+            "display": "First hepatitis B junior vaccination",
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                "extension": [
+                  {
+                    "url": "descriptionId",
+                    "valueId": "2236311000000116"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "1d468fde-c214-11ec-ba50-0a58a9feac02"
+    }
+  ],
+  "status": "completed",
+  "notGiven": false,
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "12951811000001104",
+        "display": "Ambirix vaccine suspension for injection 1ml pre-filled syringes (GlaxoSmithKline UK Ltd)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/86e984a6-b64c-11ec-bc77-0a58a9feac02"
+  },
+  "date": "2022-04-22",
+  "primarySource": true,
+  "manufacturer": {
+    "reference": "Organization/manufacturer-4012301000001105"
+  },
+  "lotNumber": "ABCdefg",
+  "expirationDate": "2022-04-24",
+  "site": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "368208006",
+        "display": "Left upper arm structure",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "507686016"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Left arm"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "route": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "78421000",
+        "display": "Intramuscular"
+      }
+    ]
+  },
+  "doseQuantity": {
+    "value": "1.0000",
+    "unit": "ml",
+    "system": "http://unitsofmeasure.org",
+    "code": "ml"
+  },
+  "practitioner": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0443",
+            "code": "EP",
+            "display": "Entering Provider"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+      }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+            "code": "AP",
+            "display": "Administering Provider"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient never had this injection as a child."
+    }
+  ]
+}

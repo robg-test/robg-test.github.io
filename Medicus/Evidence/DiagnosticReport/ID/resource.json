@@ -1,0 +1,64 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "b07bb820-287a-11ed-8628-06d7456b9d46",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DiagnosticReport-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "b07bb820-287a-11ed-8628-06d7456b9d46"
+    }
+  ],
+  "status": "unknown",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "261904005",
+        "display": "Laboratory"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "721981007",
+        "display": "Diagnostic studies report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "issued": "2001-03-30T16:23:00+01:00",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/RQR00"
+      }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/b094270c-287a-11ed-ab8f-06d7456b9d46"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/b07bb820-287a-11ed-8628-06d7456b9d46-filing-status"
+    },
+    {
+      "reference": "Observation/b09a4984-287a-11ed-ab30-06d7456b9d46"
+    },
+    {
+      "reference": "Observation/b0ae717a-287a-11ed-b1b1-06d7456b9d46"
+    },
+    {
+      "reference": "Observation/b0aef4ba-287a-11ed-a2e3-06d7456b9d46"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "resourceType": "Observation",
+  "id": "3db3d210-286a-11ed-9eb6-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "3db3d210-286a-11ed-9eb6-0a58a9feac02"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75367002",
+        "display": "Blood pressure",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "125176019"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/e87d9102-cac5-11ec-abac-0ad8d1a72d1a"
+  },
+  "effectiveDateTime": "2022-08-01",
+  "issued": "2022-08-30",
+  "performer": [
+    {
+      "reference": "Practitioner/804c89889d457dfd341afa384cf227ef"
+    },
+    {
+      "reference": "Organization/a0f27638260642afb474516cc918407e"
+    }
+  ],
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0078",
+        "code": "N",
+        "display": "Normal"
+      }
+    ]
+  },
+  "comment": "¬`!\"£$%^&*()_-+={}[]:;@'~#<,>.?/|\\ 01234567890 ABCdef",
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "368208006",
+        "display": "Left upper arm structure",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "507686016"
+              },
+              {
+                "url": "descriptionDisplay",
+                "valueString": "Left arm"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271649006",
+            "display": "Systolic blood pressure",
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                "extension": [
+                  {
+                    "url": "descriptionId",
+                    "valueId": "406507015"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 119,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271650006",
+            "display": "Diastolic blood pressure",
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                "extension": [
+                  {
+                    "url": "descriptionId",
+                    "valueId": "406508013"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 79,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

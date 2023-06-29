@@ -1,0 +1,15 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "02b9f725d01afa148076a717c2b56b3c",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+  },
+  "organization": {
+    "reference": "Organization/N82090"
+  }
+}

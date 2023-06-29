@@ -1,0 +1,84 @@
+{
+  "resourceType": "Condition",
+  "id": "cbfdeab0-f629-11ec-8b07-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+      "valueCode": "major"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "parent"
+        },
+        {
+          "url": "target",
+          "valueReference": {
+            "reference": "Condition/18bb0f7c-f620-11ec-be4c-0a58a9feac02"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "cbfdeab0-f629-11ec-8b07-0a58a9feac02"
+    }
+  ],
+  "clinicalStatus": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1144586002",
+        "display": "Increased pain",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "4542415010"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/f4ce57a0-e737-11ec-ba30-0a58a9feac02"
+  },
+  "onsetDateTime": "2022-06-19",
+  "assertedDate": "2022-06-27T15:59:51+01:00",
+  "asserter": {
+    "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+  },
+  "note": [
+    {
+      "text": "Due to physical exercise activities."
+    },
+    {
+      "text": "Episode: Subsequent"
+    }
+  ]
+}

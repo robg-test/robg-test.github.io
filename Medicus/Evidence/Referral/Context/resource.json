@@ -1,0 +1,91 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "13477f2a-f6e4-11ec-8765-0ad2cc072944"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "routine",
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "context": {
+    "reference": "Encounter/ee24d42c-f6e3-11ec-abfa-0ad2cc072944"
+  },
+  "authoredOn": "2022-06-28",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/N82090"
+    }
+  },
+  "specialty": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "394579002",
+        "display": "Cardiology",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1488309017"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "recipient": [
+    {
+      "reference": "Practitioner/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-practitioner"
+    },
+    {
+      "reference": "Organization/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation"
+    },
+    {
+      "reference": "HealthcareService/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-healthcare-service"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "853561000000109",
+          "display": "Referral to Angina Plan self-management programme",
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+              "extension": [
+                {
+                  "url": "descriptionId",
+                  "valueId": "2210191000000118"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "DocumentReference/manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
+    }
+  ]
+}

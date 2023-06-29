@@ -1,0 +1,110 @@
+{
+  "resourceType": "List",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Medications and medical devices",
+  "code": {
+    "coding": [
+      {
+        "display": "Medications and medical devices",
+        "system": "http://snomed.info/sct",
+        "code": "933361000000108"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-6278e78c-7709-11ed-980a-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-6b0b0728-ac87-11ed-8417-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-f500c670-0083-11ee-9c2d-0a8ce49d4524"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-d369e7b2-77e4-11ed-956f-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-8fd9de28-5f69-11ed-985c-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-6fd933ac-5f6a-11ed-bc90-0a7ec8f5e518"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-091b1f84-6048-11ed-b189-0a7ec8f5e518"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-a1c0dca6-6048-11ed-b5c3-0a7ec8f5e518"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-345c9342-6509-11ed-82d1-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-bad8c578-65ca-11ed-8f82-067059b36db6"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-2e8c524c-69b7-11ed-9cd1-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-43ff64bc-69c0-11ed-b27e-0a58a9feac02"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-c5d153d8-69c0-11ed-a950-0a0382d71aaa"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-62fe7578-69c1-11ed-adf5-0a0382d71aaa"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-aa41f8b4-6b1b-11ed-ba44-0a0382d71aaa"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-c7dc0d8a-724e-11ed-b5de-0aabbff1b2aa"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/ms-5d3648f6-7582-11ed-8c8e-0af98851dc5c"
+      }
+    }
+  ]
+}
