@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "94099e85-d986-4074-9aea-6ce8cec8ab19",
+  "id": "a3f897d5-45e7-4c0b-95f3-7c8c2b0b067a",
   "type": "collection",
   "entry": [
     {
@@ -13,7 +13,7 @@
         "resourceType": "Patient",
         "id": "f880c240-544a-11ed-99f9-0a707f4e90e8",
         "meta": {
-          "versionId": "591126cda67c7fb7452d2b06d82c000d",
+          "versionId": "3a328925375cfd5ea2d1918d03e98e5e",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -68,7 +68,7 @@
         "name": [
           {
             "use": "official",
-            "family": "CONLEY",
+            "family": "Conley",
             "prefix": [
               "Ms"
             ],

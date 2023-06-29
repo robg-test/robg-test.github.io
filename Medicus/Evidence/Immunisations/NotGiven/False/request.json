@@ -9,7 +9,13 @@
       }
     },
     {
-      "name": "includeImmunisations"
+      "name": "includeImmunisations",
+      "part": [
+        {
+          "name": "includeNotGiven",
+          "valueBoolean": false
+        }
+      ]
     }
   ]
 }

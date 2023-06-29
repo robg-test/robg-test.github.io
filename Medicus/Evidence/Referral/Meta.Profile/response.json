@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "b9b638e1-c263-4a19-8149-76eba1064e02",
+  "id": "f1c8ec77-7386-4079-a333-18777f8d6072",
   "type": "collection",
   "entry": [
     {
@@ -208,6 +208,1457 @@
             "system": "email",
             "value": "gp.connect.test.site@medicus.health",
             "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "6aff1c04-0f44-11ee-8492-0a58a9feac02"
+          }
+        ],
+        "status": "unknown",
+        "intent": "order",
+        "priority": "routine",
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "authoredOn": "2023-06-20",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+          },
+          "onBehalfOf": {
+            "reference": "Organization/N82090"
+          }
+        },
+        "specialty": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394579002",
+              "display": "Cardiology",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1488309017"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "recipient": [
+          {
+            "reference": "Practitioner/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-practitioner"
+          },
+          {
+            "reference": "Organization/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation"
+          },
+          {
+            "reference": "HealthcareService/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-healthcare-service"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "492861000000101",
+                "display": "Referral to health trainer",
+                "extension": [
+                  {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                    "extension": [
+                      {
+                        "url": "descriptionId",
+                        "valueId": "1061281000000112"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "description": "Is this the note field? 1 Details"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9a816e56-0b65-11ee-a9b2-0a58a9feac02",
+        "meta": {
+          "versionId": "18228deea2b33ae5439b4ca518ac1bdf",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Charles Magiera",
+            "family": "Magiera",
+            "given": [
+              "Charles"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "b7ad8c55f2aadf38e23fd87418b745b0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-practitioner",
+        "meta": {
+          "versionId": "93973786215e394981cc1de398534064",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Mr Andrew Guiseley"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation",
+        "meta": {
+          "versionId": "aa971b4155e42fff860a798f765153c1",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "active": true,
+        "name": "Fountain Medical Centre"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-healthcare-service",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          ]
+        },
+        "name": "Cardiology",
+        "providedBy": {
+          "reference": "Organization/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f515e198-ebcd-11ec-b79c-0a361c06cf60",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "minor"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "child"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/a2033584-ec9d-11ec-9da8-0a58a9feac02"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "parent"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/a0e9e322-e64a-11ec-a54f-0a58a9feac02"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "AllergyIntolerance/a16d599a-f933-11ec-8781-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/ab663cd0-0358-11ed-b5cf-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "AllergyIntolerance/c3595e08-0358-11ed-93c9-0a58a9feac02"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "f515e198-ebcd-11ec-b79c-0a361c06cf60"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "247234006",
+              "display": "Ear finding",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1224006016"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Ear observation"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "onsetDateTime": "2022-06-14",
+        "assertedDate": "2022-06-14T11:37:15+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "note": [
+          {
+            "text": "Noting that ear's has a lot of wax, needs removing."
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bb1e3008-ba45-11ec-9b67-0a58a9feac02",
+        "meta": {
+          "versionId": "acfbb3553175835c05b58346e1e8ed99",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": " Andrew Guiseley",
+            "family": " Andrew Guiseley"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "02b9f725d01afa148076a717c2b56b3c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a2033584-ec9d-11ec-9da8-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "minor"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "parent"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "a2033584-ec9d-11ec-9da8-0a58a9feac02"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1475003",
+              "display": "Herpes labialis",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "476681015"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Cold sore"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "onsetDateTime": "2021-03-22",
+        "abatementDateTime": "2022-06-15T00:00:00+01:00",
+        "assertedDate": "2022-06-15T12:23:51+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a0e9e322-e64a-11ec-a54f-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "minor"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "child"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "parent"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/931f0b5a-e64a-11ec-967d-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/de8fd02e-e64a-11ec-98f8-0a58a9feac02"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "a0e9e322-e64a-11ec-a54f-0a58a9feac02"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "47933007",
+              "display": "Foot pain",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "494960013"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "abatementDateTime": "2022-06-15T00:00:00+01:00",
+        "assertedDate": "2022-06-07T11:14:34+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "473e837c-eb1e-11ec-93bb-0a06f4112c2e",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "major"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "sibling"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/d7d24850-ec9b-11ec-a086-0a58a9feac02"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "child"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/a0e9e322-e64a-11ec-a54f-0a58a9feac02"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "parent"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/69bf3b5c-ec9b-11ec-914a-0a58a9feac02"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "MedicationRequest/mr-cdcf495e-44b4-11ed-8273-06799d888942"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/004d5e0a-e675-11ec-984c-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/3a580f56-eca0-11ec-8c0d-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/aa9b8db4-ec92-11ec-a152-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/645a6996-ec93-11ec-a9cc-0a58a9feac02"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/a74ab406-3e3f-11ed-a4e0-06ac6343f75e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/a4707f94-44b2-11ed-aa59-06799d888942"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "473e837c-eb1e-11ec-93bb-0a06f4112c2e"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90560007",
+              "display": "Gout",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "150085018"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "onsetDateTime": "2000-01-23",
+        "assertedDate": "2022-06-13T14:39:41+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "note": [
+          {
+            "text": "Episode: First"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "69bf3b5c-ec9b-11ec-914a-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "minor"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "child"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "69bf3b5c-ec9b-11ec-914a-0a58a9feac02"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "35885006",
+              "display": "Hyperuricaemia",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "59880015"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Hyperuricemia"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "assertedDate": "2022-06-15T12:07:57+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d7d24850-ec9b-11ec-a086-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
+            "valueCode": "minor"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
+            "extension": [
+              {
+                "url": "type",
+                "valueCode": "sibling"
+              },
+              {
+                "url": "target",
+                "valueReference": {
+                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "d7d24850-ec9b-11ec-a086-0a58a9feac02"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162397003",
+              "display": "Pain in throat",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "2164213014"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Sore throat"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "assertedDate": "2022-06-15T12:11:02+01:00",
+        "asserter": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "436b3c9a-0f53-11ee-89eb-0a58a9feac02"
+          }
+        ],
+        "status": "cancelled",
+        "intent": "order",
+        "priority": "urgent",
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "authoredOn": "2023-06-20",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+          },
+          "onBehalfOf": {
+            "reference": "Organization/N82090"
+          }
+        },
+        "specialty": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394579002",
+              "display": "Cardiology",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1488309017"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "recipient": [
+          {
+            "reference": "Practitioner/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-practitioner"
+          },
+          {
+            "reference": "Organization/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation"
+          },
+          {
+            "reference": "HealthcareService/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-healthcare-service"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "183522000",
+                "display": "Referral to care of the elderly service",
+                "extension": [
+                  {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                    "extension": [
+                      {
+                        "url": "descriptionId",
+                        "valueId": "283607015"
+                      },
+                      {
+                        "url": "descriptionDisplay",
+                        "valueString": "Geriatric referral"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "description": "To be cancelled to check status"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-practitioner",
+        "meta": {
+          "versionId": "0cd7ec82302d004a7e611d979e4eda71",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Mr Andrew Guiseley"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation",
+        "meta": {
+          "versionId": "f4acbb2bbaa8590ed42dd09335da798b",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "active": true,
+        "name": "Fountain Medical Centre"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-healthcare-service",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          ]
+        },
+        "name": "Cardiology",
+        "providedBy": {
+          "reference": "Organization/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "71cf4fa0-14d9-11ee-b7f8-06a049da81fc",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "71cf4fa0-14d9-11ee-b7f8-06a049da81fc"
+          }
+        ],
+        "status": "cancelled",
+        "intent": "order",
+        "priority": "asap",
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "authoredOn": "2023-06-27",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+          },
+          "onBehalfOf": {
+            "reference": "Organization/N82090"
+          }
+        },
+        "specialty": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394579002",
+              "display": "Cardiology",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1488309017"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "recipient": [
+          {
+            "reference": "Practitioner/71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-practitioner"
+          },
+          {
+            "reference": "Organization/71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-organisation"
+          },
+          {
+            "reference": "HealthcareService/71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-healthcare-service"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "415265005",
+                "display": "Referral to asthma clinic",
+                "extension": [
+                  {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                    "extension": [
+                      {
+                        "url": "descriptionId",
+                        "valueId": "2533402016"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "description": "asap"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-practitioner",
+        "meta": {
+          "versionId": "75797b5e5339ca93f24068c8f48e746c",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Mr Andrew Guiseley"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-organisation",
+        "meta": {
+          "versionId": "5a1d3df54cf6ec8b007bb481662498a6",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "active": true,
+        "name": "Fountain Medical Centre"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-healthcare-service",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          ]
+        },
+        "name": "Cardiology",
+        "providedBy": {
+          "reference": "Organization/71cf4fa0-14d9-11ee-b7f8-06a049da81fc-provider-organisation"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "838b4400-14da-11ee-8969-06a049da81fc",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "838b4400-14da-11ee-8969-06a049da81fc"
+          }
+        ],
+        "status": "unknown",
+        "intent": "order",
+        "priority": "asap",
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "authoredOn": "2023-06-27",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
+          },
+          "onBehalfOf": {
+            "reference": "Organization/N82090"
+          }
+        },
+        "specialty": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394579002",
+              "display": "Cardiology",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1488309017"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "recipient": [
+          {
+            "reference": "Practitioner/838b4400-14da-11ee-8969-06a049da81fc-provider-practitioner"
+          },
+          {
+            "reference": "Organization/838b4400-14da-11ee-8969-06a049da81fc-provider-organisation"
+          },
+          {
+            "reference": "HealthcareService/838b4400-14da-11ee-8969-06a049da81fc-provider-healthcare-service"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "183519002",
+                "display": "Referral to cardiology service",
+                "extension": [
+                  {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                    "extension": [
+                      {
+                        "url": "descriptionId",
+                        "valueId": "283601019"
+                      },
+                      {
+                        "url": "descriptionDisplay",
+                        "valueString": "Cardiological referral"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "description": "THIS IS FOR ASAP"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "838b4400-14da-11ee-8969-06a049da81fc-provider-practitioner",
+        "meta": {
+          "versionId": "50e4c0eeb8a57518d5db5521c2032c01",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Mr Andrew Guiseley"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "838b4400-14da-11ee-8969-06a049da81fc-provider-organisation",
+        "meta": {
+          "versionId": "f8e710f3cdbb404406da984ed0610a9b",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "active": true,
+        "name": "Fountain Medical Centre"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "838b4400-14da-11ee-8969-06a049da81fc-provider-healthcare-service",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          ]
+        },
+        "name": "Cardiology",
+        "providedBy": {
+          "reference": "Organization/838b4400-14da-11ee-8969-06a049da81fc-provider-organisation"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "13477f2a-f6e4-11ec-8765-0ad2cc072944"
+          }
+        ],
+        "status": "unknown",
+        "intent": "order",
+        "priority": "routine",
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "context": {
+          "reference": "Encounter/ee24d42c-f6e3-11ec-abfa-0ad2cc072944"
+        },
+        "authoredOn": "2022-06-28",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          },
+          "onBehalfOf": {
+            "reference": "Organization/N82090"
+          }
+        },
+        "specialty": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394579002",
+              "display": "Cardiology",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1488309017"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "recipient": [
+          {
+            "reference": "Practitioner/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-practitioner"
+          },
+          {
+            "reference": "Organization/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation"
+          },
+          {
+            "reference": "HealthcareService/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-healthcare-service"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "853561000000109",
+                "display": "Referral to Angina Plan self-management programme",
+                "extension": [
+                  {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                    "extension": [
+                      {
+                        "url": "descriptionId",
+                        "valueId": "2210191000000118"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "DocumentReference/manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-practitioner",
+        "meta": {
+          "versionId": "0f4023d0ea076d6fd0ff14b65ad9eaa7",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation",
+        "meta": {
+          "versionId": "83bc305309cfff0363df827507371141",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "active": true,
+        "name": "Fountain Medical Centre"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-healthcare-service",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+          ]
+        },
+        "name": "Cardiology",
+        "providedBy": {
+          "reference": "Organization/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DocumentReference-1"
+          ]
+        },
+        "masterIdentifier": {
+          "system": "https://medicus.health",
+          "value": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
+        },
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
+          }
+        ],
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "25611000000107",
+              "display": "Referral letter",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "63301000000111"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+        },
+        "created": "2022-06-28",
+        "indexed": "2022-06-28T14:13:17+01:00",
+        "author": [
+          {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/N82090"
+        },
+        "description": "Referral letter",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "size": 12034,
+              "url": "https://a30005.api.training.england.medicus.health/N82090/STU3/1/gpconnect/documents/Binary/manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
+            }
           }
         ]
       }
@@ -527,7 +1978,7 @@
     {
       "resource": {
         "resourceType": "ReferralRequest",
-        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944",
+        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a",
         "meta": {
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
@@ -536,7 +1987,7 @@
         "identifier": [
           {
             "system": "https://medicus.health",
-            "value": "13477f2a-f6e4-11ec-8765-0ad2cc072944"
+            "value": "3891cf18-caea-11ec-8a2b-06f925533f3a"
           }
         ],
         "status": "unknown",
@@ -545,13 +1996,10 @@
         "subject": {
           "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
         },
-        "context": {
-          "reference": "Encounter/ee24d42c-f6e3-11ec-abfa-0ad2cc072944"
-        },
-        "authoredOn": "2022-06-28",
+        "authoredOn": "2022-05-03",
         "requester": {
           "agent": {
-            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+            "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
           },
           "onBehalfOf": {
             "reference": "Organization/N82090"
@@ -579,13 +2027,13 @@
         },
         "recipient": [
           {
-            "reference": "Practitioner/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-practitioner"
+            "reference": "Practitioner/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-practitioner"
           },
           {
-            "reference": "Organization/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation"
+            "reference": "Organization/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation"
           },
           {
-            "reference": "HealthcareService/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-healthcare-service"
+            "reference": "HealthcareService/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-healthcare-service"
           }
         ],
         "reasonCode": [
@@ -593,15 +2041,15 @@
             "coding": [
               {
                 "system": "http://snomed.info/sct",
-                "code": "853561000000109",
-                "display": "Referral to Angina Plan self-management programme",
+                "code": "134440006",
+                "display": "Referral to heart failure clinic",
                 "extension": [
                   {
                     "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
                     "extension": [
                       {
                         "url": "descriptionId",
-                        "valueId": "2210191000000118"
+                        "valueId": "216246012"
                       }
                     ]
                   }
@@ -610,19 +2058,15 @@
             ]
           }
         ],
-        "supportingInfo": [
-          {
-            "reference": "DocumentReference/manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
-          }
-        ]
+        "description": "Testing this referral"
       }
     },
     {
       "resource": {
         "resourceType": "Practitioner",
-        "id": "bb1e3008-ba45-11ec-9b67-0a58a9feac02",
+        "id": "748dc0bc-9bbf-11ec-b043-0ae647c12c72",
         "meta": {
-          "versionId": "5d44a152399dcaeaaaebb94dd8856da2",
+          "versionId": "8e6c8a46904378c415be377c7e65737d",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
           ]
@@ -631,8 +2075,8 @@
         "name": [
           {
             "use": "official",
-            "text": "Andrew Guiseley",
-            "family": "Andrew Guiseley"
+            "text": "Yogesh Mistry",
+            "family": "Yogesh Mistry"
           }
         ]
       }
@@ -640,14 +2084,14 @@
     {
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "02b9f725d01afa148076a717c2b56b3c",
+        "id": "66d66ae0765abee0daecd89231559785",
         "meta": {
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
         },
         "organization": {
           "reference": "Organization/N82090"
@@ -657,9 +2101,9 @@
     {
       "resource": {
         "resourceType": "Practitioner",
-        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-practitioner",
+        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-practitioner",
         "meta": {
-          "versionId": "0f4023d0ea076d6fd0ff14b65ad9eaa7",
+          "versionId": "c9a49fa62a6a741bf6ceb08d0a9e4205",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
           ]
@@ -675,9 +2119,9 @@
     {
       "resource": {
         "resourceType": "Organization",
-        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation",
+        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation",
         "meta": {
-          "versionId": "83bc305309cfff0363df827507371141",
+          "versionId": "8616b259a5d01562642745f603027b5d",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
           ]
@@ -689,7 +2133,7 @@
     {
       "resource": {
         "resourceType": "HealthcareService",
-        "id": "13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-healthcare-service",
+        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-healthcare-service",
         "meta": {
           "profile": [
             "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
@@ -697,73 +2141,8 @@
         },
         "name": "Cardiology",
         "providedBy": {
-          "reference": "Organization/13477f2a-f6e4-11ec-8765-0ad2cc072944-provider-organisation"
+          "reference": "Organization/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation"
         }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DocumentReference-1"
-          ]
-        },
-        "masterIdentifier": {
-          "system": "https://medicus.health",
-          "value": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
-        },
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
-          }
-        ],
-        "status": "current",
-        "type": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "25611000000107",
-              "display": "Referral letter",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "63301000000111"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "created": "2022-06-28",
-        "indexed": "2022-06-28T14:13:17+01:00",
-        "author": [
-          {
-            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-          }
-        ],
-        "custodian": {
-          "reference": "Organization/N82090"
-        },
-        "description": "Referral letter",
-        "content": [
-          {
-            "attachment": {
-              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-              "size": 12034,
-              "url": "https://a30005.api.training.england.medicus.health/N82090/STU3/1/gpconnect/documents/Binary/manual-referral-attachment--1350f366-f6e4-11ec-aed2-0ad2cc072944"
-            }
-          }
-        ]
       }
     },
     {
@@ -1139,1113 +2518,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "473e837c-eb1e-11ec-93bb-0a06f4112c2e",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "major"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "sibling"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/d7d24850-ec9b-11ec-a086-0a58a9feac02"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "child"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/a0e9e322-e64a-11ec-a54f-0a58a9feac02"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "parent"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/69bf3b5c-ec9b-11ec-914a-0a58a9feac02"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "MedicationRequest/mr-cdcf495e-44b4-11ed-8273-06799d888942"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Encounter/004d5e0a-e675-11ec-984c-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Observation/3a580f56-eca0-11ec-8c0d-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Encounter/aa9b8db4-ec92-11ec-a152-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Observation/645a6996-ec93-11ec-a9cc-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Encounter/a74ab406-3e3f-11ed-a4e0-06ac6343f75e"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Observation/a4707f94-44b2-11ed-aa59-06799d888942"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "473e837c-eb1e-11ec-93bb-0a06f4112c2e"
-          }
-        ],
-        "clinicalStatus": "active",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "90560007",
-              "display": "Gout",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "150085018"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "onsetDateTime": "2000-01-23",
-        "assertedDate": "2022-06-13T14:39:41+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        },
-        "note": [
-          {
-            "text": "Episode: First"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "a0e9e322-e64a-11ec-a54f-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "minor"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "child"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "parent"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Encounter/931f0b5a-e64a-11ec-967d-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Observation/de8fd02e-e64a-11ec-98f8-0a58a9feac02"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "a0e9e322-e64a-11ec-a54f-0a58a9feac02"
-          }
-        ],
-        "clinicalStatus": "inactive",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "47933007",
-              "display": "Foot pain",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "494960013"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "abatementDateTime": "2022-06-15T00:00:00+01:00",
-        "assertedDate": "2022-06-07T11:14:34+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "f515e198-ebcd-11ec-b79c-0a361c06cf60",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "minor"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "child"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/a2033584-ec9d-11ec-9da8-0a58a9feac02"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "parent"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/a0e9e322-e64a-11ec-a54f-0a58a9feac02"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "AllergyIntolerance/a16d599a-f933-11ec-8781-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "Encounter/ab663cd0-0358-11ed-b5cf-0a58a9feac02"
-            }
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
-            "valueReference": {
-              "reference": "AllergyIntolerance/c3595e08-0358-11ed-93c9-0a58a9feac02"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "f515e198-ebcd-11ec-b79c-0a361c06cf60"
-          }
-        ],
-        "clinicalStatus": "active",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "247234006",
-              "display": "Ear finding",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "1224006016"
-                    },
-                    {
-                      "url": "descriptionDisplay",
-                      "valueString": "Ear observation"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "onsetDateTime": "2022-06-14",
-        "assertedDate": "2022-06-14T11:37:15+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        },
-        "note": [
-          {
-            "text": "Noting that ear's has a lot of wax, needs removing."
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "a2033584-ec9d-11ec-9da8-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "minor"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "parent"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
-                }
-              }
-            ]
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "a2033584-ec9d-11ec-9da8-0a58a9feac02"
-          }
-        ],
-        "clinicalStatus": "inactive",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1475003",
-              "display": "Herpes labialis",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "476681015"
-                    },
-                    {
-                      "url": "descriptionDisplay",
-                      "valueString": "Cold sore"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "onsetDateTime": "2021-03-22",
-        "abatementDateTime": "2022-06-15T00:00:00+01:00",
-        "assertedDate": "2022-06-15T12:23:51+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "69bf3b5c-ec9b-11ec-914a-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "minor"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "child"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
-                }
-              }
-            ]
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "69bf3b5c-ec9b-11ec-914a-0a58a9feac02"
-          }
-        ],
-        "clinicalStatus": "active",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "35885006",
-              "display": "Hyperuricaemia",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "59880015"
-                    },
-                    {
-                      "url": "descriptionDisplay",
-                      "valueString": "Hyperuricemia"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "assertedDate": "2022-06-15T12:07:57+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "d7d24850-ec9b-11ec-a086-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1",
-            "valueCode": "minor"
-          },
-          {
-            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1",
-            "extension": [
-              {
-                "url": "type",
-                "valueCode": "sibling"
-              },
-              {
-                "url": "target",
-                "valueReference": {
-                  "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
-                }
-              }
-            ]
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "d7d24850-ec9b-11ec-a086-0a58a9feac02"
-          }
-        ],
-        "clinicalStatus": "active",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/condition-category",
-                "code": "problem-list-item",
-                "display": "Problem List Item"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "162397003",
-              "display": "Pain in throat",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "2164213014"
-                    },
-                    {
-                      "url": "descriptionDisplay",
-                      "valueString": "Sore throat"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "assertedDate": "2022-06-15T12:11:02+01:00",
-        "asserter": {
-          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "ReferralRequest",
-        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "3891cf18-caea-11ec-8a2b-06f925533f3a"
-          }
-        ],
-        "status": "unknown",
-        "intent": "order",
-        "priority": "routine",
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "authoredOn": "2022-05-03",
-        "requester": {
-          "agent": {
-            "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
-          },
-          "onBehalfOf": {
-            "reference": "Organization/N82090"
-          }
-        },
-        "specialty": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "394579002",
-              "display": "Cardiology",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "1488309017"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "recipient": [
-          {
-            "reference": "Practitioner/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-practitioner"
-          },
-          {
-            "reference": "Organization/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation"
-          },
-          {
-            "reference": "HealthcareService/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-healthcare-service"
-          }
-        ],
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "134440006",
-                "display": "Referral to heart failure clinic",
-                "extension": [
-                  {
-                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                    "extension": [
-                      {
-                        "url": "descriptionId",
-                        "valueId": "216246012"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "description": "Testing this referral"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "748dc0bc-9bbf-11ec-b043-0ae647c12c72",
-        "meta": {
-          "versionId": "8e6c8a46904378c415be377c7e65737d",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
-          ]
-        },
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "text": "Yogesh Mistry",
-            "family": "Yogesh Mistry"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "66d66ae0765abee0daecd89231559785",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
-          ]
-        },
-        "practitioner": {
-          "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
-        },
-        "organization": {
-          "reference": "Organization/N82090"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-practitioner",
-        "meta": {
-          "versionId": "c9a49fa62a6a741bf6ceb08d0a9e4205",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
-          ]
-        },
-        "active": true,
-        "name": [
-          {
-            "use": "official"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Organization",
-        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation",
-        "meta": {
-          "versionId": "8616b259a5d01562642745f603027b5d",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
-          ]
-        },
-        "active": true,
-        "name": "Fountain Medical Centre"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "HealthcareService",
-        "id": "3891cf18-caea-11ec-8a2b-06f925533f3a-provider-healthcare-service",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
-          ]
-        },
-        "name": "Cardiology",
-        "providedBy": {
-          "reference": "Organization/3891cf18-caea-11ec-8a2b-06f925533f3a-provider-organisation"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "ReferralRequest",
-        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "6aff1c04-0f44-11ee-8492-0a58a9feac02"
-          }
-        ],
-        "status": "unknown",
-        "intent": "order",
-        "priority": "routine",
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "authoredOn": "2023-06-20",
-        "requester": {
-          "agent": {
-            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
-          },
-          "onBehalfOf": {
-            "reference": "Organization/N82090"
-          }
-        },
-        "specialty": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "394579002",
-              "display": "Cardiology",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "1488309017"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "recipient": [
-          {
-            "reference": "Practitioner/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-practitioner"
-          },
-          {
-            "reference": "Organization/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation"
-          },
-          {
-            "reference": "HealthcareService/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-healthcare-service"
-          }
-        ],
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "492861000000101",
-                "display": "Referral to health trainer",
-                "extension": [
-                  {
-                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                    "extension": [
-                      {
-                        "url": "descriptionId",
-                        "valueId": "1061281000000112"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "description": "Is this the note field? 1 Details"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "9a816e56-0b65-11ee-a9b2-0a58a9feac02",
-        "meta": {
-          "versionId": "18228deea2b33ae5439b4ca518ac1bdf",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
-          ]
-        },
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "text": "Charles Magiera",
-            "family": "Magiera",
-            "given": [
-              "Charles"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "b7ad8c55f2aadf38e23fd87418b745b0",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
-          ]
-        },
-        "practitioner": {
-          "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
-        },
-        "organization": {
-          "reference": "Organization/N82090"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-practitioner",
-        "meta": {
-          "versionId": "93973786215e394981cc1de398534064",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
-          ]
-        },
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "text": "Mr Andrew Guiseley"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Organization",
-        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation",
-        "meta": {
-          "versionId": "aa971b4155e42fff860a798f765153c1",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
-          ]
-        },
-        "active": true,
-        "name": "Fountain Medical Centre"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "HealthcareService",
-        "id": "6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-healthcare-service",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
-          ]
-        },
-        "name": "Cardiology",
-        "providedBy": {
-          "reference": "Organization/6aff1c04-0f44-11ee-8492-0a58a9feac02-provider-organisation"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "ReferralRequest",
-        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://medicus.health",
-            "value": "436b3c9a-0f53-11ee-89eb-0a58a9feac02"
-          }
-        ],
-        "status": "cancelled",
-        "intent": "order",
-        "priority": "urgent",
-        "subject": {
-          "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
-        },
-        "authoredOn": "2023-06-20",
-        "requester": {
-          "agent": {
-            "reference": "Practitioner/9a816e56-0b65-11ee-a9b2-0a58a9feac02"
-          },
-          "onBehalfOf": {
-            "reference": "Organization/N82090"
-          }
-        },
-        "specialty": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "394579002",
-              "display": "Cardiology",
-              "extension": [
-                {
-                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                  "extension": [
-                    {
-                      "url": "descriptionId",
-                      "valueId": "1488309017"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "recipient": [
-          {
-            "reference": "Practitioner/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-practitioner"
-          },
-          {
-            "reference": "Organization/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation"
-          },
-          {
-            "reference": "HealthcareService/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-healthcare-service"
-          }
-        ],
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "183522000",
-                "display": "Referral to care of the elderly service",
-                "extension": [
-                  {
-                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                    "extension": [
-                      {
-                        "url": "descriptionId",
-                        "valueId": "283607015"
-                      },
-                      {
-                        "url": "descriptionDisplay",
-                        "valueString": "Geriatric referral"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "description": "To be cancelled to check status"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-practitioner",
-        "meta": {
-          "versionId": "0cd7ec82302d004a7e611d979e4eda71",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
-          ]
-        },
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "text": "Mr Andrew Guiseley"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Organization",
-        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation",
-        "meta": {
-          "versionId": "f4acbb2bbaa8590ed42dd09335da798b",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
-          ]
-        },
-        "active": true,
-        "name": "Fountain Medical Centre"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "HealthcareService",
-        "id": "436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-healthcare-service",
-        "meta": {
-          "profile": [
-            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
-          ]
-        },
-        "name": "Cardiology",
-        "providedBy": {
-          "reference": "Organization/436b3c9a-0f53-11ee-89eb-0a58a9feac02-provider-organisation"
-        }
       }
     },
     {
@@ -4017,12 +4289,37 @@
         "entry": [
           {
             "item": {
-              "reference": "ReferralRequest/29129834-caee-11ec-86d5-06f925533f3a"
+              "reference": "ReferralRequest/6aff1c04-0f44-11ee-8492-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "ReferralRequest/436b3c9a-0f53-11ee-89eb-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "ReferralRequest/71cf4fa0-14d9-11ee-b7f8-06a049da81fc"
+            }
+          },
+          {
+            "item": {
+              "reference": "ReferralRequest/838b4400-14da-11ee-8969-06a049da81fc"
             }
           },
           {
             "item": {
               "reference": "ReferralRequest/13477f2a-f6e4-11ec-8765-0ad2cc072944"
+            }
+          },
+          {
+            "item": {
+              "reference": "ReferralRequest/29129834-caee-11ec-86d5-06f925533f3a"
+            }
+          },
+          {
+            "item": {
+              "reference": "ReferralRequest/3891cf18-caea-11ec-8a2b-06f925533f3a"
             }
           },
           {
@@ -4033,21 +4330,6 @@
           {
             "item": {
               "reference": "ReferralRequest/fcfaf3d0-fbae-11ec-8f3c-0625e63b315a"
-            }
-          },
-          {
-            "item": {
-              "reference": "ReferralRequest/3891cf18-caea-11ec-8a2b-06f925533f3a"
-            }
-          },
-          {
-            "item": {
-              "reference": "ReferralRequest/6aff1c04-0f44-11ee-8492-0a58a9feac02"
-            }
-          },
-          {
-            "item": {
-              "reference": "ReferralRequest/436b3c9a-0f53-11ee-89eb-0a58a9feac02"
             }
           },
           {
@@ -4109,7 +4391,12 @@
         "entry": [
           {
             "item": {
-              "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
+              "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/a2033584-ec9d-11ec-9da8-0a58a9feac02"
             }
           },
           {
@@ -4119,12 +4406,7 @@
           },
           {
             "item": {
-              "reference": "Condition/f515e198-ebcd-11ec-b79c-0a361c06cf60"
-            }
-          },
-          {
-            "item": {
-              "reference": "Condition/a2033584-ec9d-11ec-9da8-0a58a9feac02"
+              "reference": "Condition/473e837c-eb1e-11ec-93bb-0a06f4112c2e"
             }
           },
           {

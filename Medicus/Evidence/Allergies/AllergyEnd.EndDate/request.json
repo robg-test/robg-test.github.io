@@ -18,13 +18,7 @@
       ]
     },
     {
-      "name": "includeAllergies",
-      "part": [
-        {
-          "name": "includeResolvedAllergies",
-          "valueBoolean": true
-        }
-      ]
+      "name": "includeConsultations"
     }
   ]
 }

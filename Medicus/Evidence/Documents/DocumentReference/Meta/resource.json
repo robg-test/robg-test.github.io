@@ -1,0 +1,58 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "inbound-document--37531e66-8211-11ed-9847-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-DocumentReference-1"
+    ]
+  },
+  "masterIdentifier": {
+    "system": "https://medicus.health",
+    "value": "inbound-document--37531e66-8211-11ed-9847-0a58a9feac02"
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "inbound-document--37531e66-8211-11ed-9847-0a58a9feac02"
+    }
+  ],
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "886961000000102",
+        "display": "Legal information",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "2285441000000111"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+  },
+  "created": "2022-12-22",
+  "indexed": "2022-12-22T15:56:38+00:00",
+  "custodian": {
+    "reference": "Organization/N82090"
+  },
+  "description": "Legal information",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "image/png",
+        "size": 229159,
+        "url": "https://a30005.api.training.england.medicus.health/N82090/STU3/1/gpconnect/documents/Binary/inbound-document--37531e66-8211-11ed-9847-0a58a9feac02"
+      }
+    }
+  ]
+}

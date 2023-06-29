@@ -16,15 +16,6 @@
           "valueBoolean": false
         }
       ]
-    },
-    {
-      "name": "includeImmunisations",
-      "part": [
-        {
-          "name": "includeStatus",
-          "valueBoolean": false
-        }
-      ]
     }
   ]
 }

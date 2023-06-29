@@ -13,12 +13,6 @@
     },
     {
       "name": "includeConsultations"
-    },
-    {
-      "name": "includeImmunisations"
-    },
-    {
-      "name": "includeConsultations"
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "3da3fcd4-5090-11ed-a473-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "3da3fcd4-5090-11ed-a473-0a58a9feac02"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385893007",
+        "display": "Mental health treatment",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "1480085019"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/e87d9102-cac5-11ec-abac-0ad8d1a72d1a"
+  },
+  "effectiveDateTime": "2022-10-10",
+  "issued": "2022-10-20T16:59:55+01:00",
+  "performer": [
+    {
+      "reference": "Organization/RP7EV"
+    }
+  ],
+  "comment": "Examination &\nAssessment"
+}

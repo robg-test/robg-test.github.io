@@ -1,0 +1,52 @@
+{
+  "resourceType": "ProcedureRequest",
+  "id": "0c83bef4-f173-11ec-977e-0a58a9feac02",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProcedureRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "0c83bef4-f173-11ec-977e-0a58a9feac02"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225363004",
+        "display": "Eye care",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+            "extension": [
+              {
+                "url": "descriptionId",
+                "valueId": "338658016"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95eda3fe-d138-11ec-863f-0a58a9feac02"
+  },
+  "occurrenceDateTime": "2025-12-24",
+  "authoredOn": "2022-06-21",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/748dc0bc-9bbf-11ec-b043-0ae647c12c72"
+    }
+  },
+  "note": [
+    {
+      "text": "Linked to a eye problem, requires cleaning and assessment."
+    }
+  ]
+}

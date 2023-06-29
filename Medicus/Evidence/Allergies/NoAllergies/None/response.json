@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "5f23bf3f-c62c-477d-b44f-f1a6a95aa957",
+  "id": "49f64d46-7dd2-4c55-854d-57d1e8cf7218",
   "type": "collection",
   "entry": [
     {
@@ -13,7 +13,7 @@
         "resourceType": "Patient",
         "id": "b8d559f2-38c6-11ed-882d-068ed94095f6",
         "meta": {
-          "versionId": "bea2090d2930599bf8a59ed145112fb1",
+          "versionId": "d359ea596351a45e4214b40f042d632e",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -68,7 +68,7 @@
         "name": [
           {
             "use": "official",
-            "family": "WOOD",
+            "family": "Wood",
             "prefix": [
               "Mr"
             ],
