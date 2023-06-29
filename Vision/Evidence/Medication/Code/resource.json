@@ -1,0 +1,22 @@
+{
+  "resourceType": "Medication",
+  "id": "348e1cde-c4f8-4baf-8dec-35509985c128M",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "38750911000001103",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "78042020",
+        "system": "https://fhir.hl7.org.uk/Id/resipuk-gemscript-drug-codes",
+        "userSelected": true
+      }
+    ]
+  }
+}

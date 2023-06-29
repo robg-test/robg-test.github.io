@@ -1,0 +1,71 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "1ad9893e-55bb-4f95-b974-fb8ef2599e28",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "1ad9893e-55bb-4f95-b974-fb8ef2599e28"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "routine",
+  "subject": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "context": {
+    "reference": "Encounter/51c6f2e9-f979-4609-8c63-d751d5d41340"
+  },
+  "authoredOn": "2002-11-29",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "7313000",
+          "system": "http://read.info/readv2",
+          "userSelected": true
+        },
+        {
+          "display": "Myringotomy and insertion of short-term tympanic ventilation tube",
+          "code": "172676009",
+          "system": "http://snomed.info/sct"
+        }
+      ],
+      "text": "Myringotomy and insertion of short term grommet"
+    }
+  ],
+  "note": [
+    {
+      "text": "Source:undefined"
+    },
+    {
+      "text": "Referral Type:Day Case"
+    },
+    {
+      "text": "Attendance Type:First visit"
+    },
+    {
+      "text": "Contract Status:undefined"
+    },
+    {
+      "text": "Status:undefined"
+    },
+    {
+      "text": "NHS Speciality:ENT"
+    },
+    {
+      "text": "TP Speciality:Ear, Nose and Throat"
+    },
+    {
+      "text": "Actiondate:2002-12-20"
+    },
+    {
+      "text": "Freetext:undefined"
+    }
+  ]
+}

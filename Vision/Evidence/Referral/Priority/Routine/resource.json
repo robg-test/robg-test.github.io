@@ -1,0 +1,71 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "30c33155-0856-454b-9939-4884c6160d43",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "30c33155-0856-454b-9939-4884c6160d43"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "routine",
+  "subject": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "context": {
+    "reference": "Encounter/4a8db758-2366-4398-a7b4-b73e0231bc6a"
+  },
+  "authoredOn": "1999-11-02",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "H1y1z11",
+          "system": "http://read.info/readv2",
+          "userSelected": true
+        },
+        {
+          "display": "Nasal obstruction (disorder)",
+          "code": "232209000",
+          "system": "http://snomed.info/sct"
+        }
+      ],
+      "text": "Nasal obstruction"
+    }
+  ],
+  "note": [
+    {
+      "text": "Source:undefined"
+    },
+    {
+      "text": "Referral Type:Out Patient"
+    },
+    {
+      "text": "Attendance Type:First visit"
+    },
+    {
+      "text": "Contract Status:HA contract"
+    },
+    {
+      "text": "Status:undefined"
+    },
+    {
+      "text": "NHS Speciality:ENT"
+    },
+    {
+      "text": "TP Speciality:Ear, Nose and Throat"
+    },
+    {
+      "text": "Actiondate:1999-11-23"
+    },
+    {
+      "text": "Freetext:undefined"
+    }
+  ]
+}

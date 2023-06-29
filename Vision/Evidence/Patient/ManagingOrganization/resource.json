@@ -1,0 +1,71 @@
+{
+  "resourceType": "Patient",
+  "id": "61e14e2c-e2a2-4628-aad5-cc4a11bcb03a",
+  "meta": {
+    "versionId": "1686847290000",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+      "extension": [
+        {
+          "url": "registrationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                "code": "R",
+                "display": "Regular"
+              }
+            ]
+          }
+        },
+        {
+          "url": "preferredBranchSurgery",
+          "valueReference": {
+            "reference": "Location/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9689100777"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "VALE",
+      "given": [
+        "LEE"
+      ],
+      "prefix": [
+        "MR"
+      ]
+    }
+  ],
+  "birthDate": "2007-06-10",
+  "gender": "male",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "92 DEESIDE ROAD"
+      ],
+      "city": "LONDON",
+      "postalCode": "SW17 0PX"
+    }
+  ],
+  "generalPractitioner": {
+    "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+  },
+  "managingOrganization": {
+    "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-OperationOutcome-1"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "processing",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1",
+            "code": "INTERNAL_SERVER_ERROR",
+            "display": "Unexpected internal server error"
+          }
+        ]
+      },
+      "diagnostics": "Failed to query Transformation Service using request [{\n  \"url\": \"https://chachi.vision-dev.co.uk/patients/B83621/9689100742.json\",\n  \"payload\": {\n    \"format\": \"ARS_1.6\",\n    \"inclusions\": [\n      {\n        \"builtInFilter\": {\n          \"name\": \"medications\",\n          \"args\": {\n            \"includePrescriptionIssues\": false\n          }\n        },\n        \"dateRange\": {\n          \"fromDate\": null,\n          \"toDate\": null\n        }\n      },\n      {\n        \"builtInFilter\": {\n          \"name\": \"consultations\"\n        },\n        \"dateRange\": {\n          \"fromDate\": null,\n          \"toDate\": null\n        },\n        \"limit\": {\n          \"order\": {\n            \"field\": \"eventDate\",\n            \"ascending\": false,\n            \"nullHigh\": true\n          }\n        }\n      }\n    ],\n    \"exclusions\": []\n  },\n  \"headers\": {\n    \"headers\": {\n      \"Authorization\": \"Basic dHJhbnNmb3JtOlRlc3Rpbmcx\",\n      \"Content-Type\": \"application/json\",\n      \"Accept\": \"application/json\",\n      \"accept-encoding\": \"gzip, deflate, br\",\n      \"Ssp-TraceID\": \"e76428ed-07b5-4de0-9b5e-0d72696e4cd9\"\n    }\n  }\n}"
+    }
+  ]
+}

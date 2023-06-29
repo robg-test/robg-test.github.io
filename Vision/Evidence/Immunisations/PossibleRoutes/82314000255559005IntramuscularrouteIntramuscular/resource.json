@@ -1,0 +1,117 @@
+{
+  "resourceType": "Immunization",
+  "id": "860f95f3-64cb-4414-8552-e674922d32ef",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+      "valueDateTime": "1996-10-23T16:59:29+01:00"
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "65B..00",
+            "system": "http://read.info/readv2",
+            "userSelected": true
+          },
+          {
+            "display": "Administration of vaccine product containing only Rubella virus antigen (procedure)",
+            "code": "82314000",
+            "system": "http://snomed.info/sct"
+          }
+        ],
+        "text": "Rubella vaccination"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "860f95f3-64cb-4414-8552-e674922d32ef"
+    }
+  ],
+  "status": "completed",
+  "notGiven": false,
+  "explanation": {
+    "reason": [
+      {
+        "text": "Routine Measure"
+      }
+    ]
+  },
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "UNK",
+        "display": "unknown"
+      }
+    ],
+    "text": "Unknown"
+  },
+  "patient": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "encounter": {
+    "reference": "Encounter/4f88a627-2939-4d8e-bf4a-db448a1044d3"
+  },
+  "date": "1994-11",
+  "primarySource": false,
+  "route": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "255559005",
+        "display": "Intramuscular route"
+      }
+    ],
+    "text": "Intramuscular"
+  },
+  "practitioner": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+            "code": "AP",
+            "display": "Administering Provider"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+      }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+            "code": "EP",
+            "display": "Entering Provider"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Type of Immunisation: RUBELLA"
+    },
+    {
+      "text": "Stage: 0"
+    },
+    {
+      "text": "Status: Given"
+    }
+  ]
+}

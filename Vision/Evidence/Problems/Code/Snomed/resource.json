@@ -1,0 +1,70 @@
+{
+  "resourceType": "Condition",
+  "id": "69f5adc1-0b15-4ad7-b890-0a2366f76c80",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Observation/b9418c59-4d3e-4a15-a4ee-d083ce66a5ae"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/6fde0b24-18e3-4265-84eb-96edddf9acdd"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+      "valueReference": {
+        "reference": "Observation/b9418c59-4d3e-4a15-a4ee-d083ce66a5ae"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "69f5adc1-0b15-4ad7-b890-0a2366f76c80"
+    }
+  ],
+  "clinicalStatus": "inactive",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "J101.00",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Esophagitis (disorder)",
+        "code": "16761005",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Oesophagitis"
+  },
+  "subject": {
+    "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+  },
+  "onsetDateTime": "1984-12-12",
+  "assertedDate": "2020-01-14T11:46:07Z",
+  "asserter": {
+    "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "943de593-1073-4e50-97e9-520bbc37537b",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "943de593-1073-4e50-97e9-520bbc37537b"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "65FH.00",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Administration of first dose of vaccine product containing only Japanese encephalitis virus antigen",
+        "code": "314761009",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "1st Japanese encephalitis vaccination"
+  },
+  "subject": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "context": {
+    "reference": "Encounter/1935c341-95a4-47b2-9b9c-24a292ed7853"
+  },
+  "effectiveDateTime": "2022-10-11",
+  "issued": "2022-10-11T16:49:20+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+    }
+  ],
+  "comment": "Due date for next stage: 2022-11-08, VAMP Immunisation code: JAPAN, Immunisation stage: 1, Immunisation status: Advised, Free text: Status: 'Advised' selected"
+}

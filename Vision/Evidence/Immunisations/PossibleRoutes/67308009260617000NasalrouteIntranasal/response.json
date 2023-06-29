@@ -1,0 +1,4505 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f",
+        "meta": {
+          "versionId": "1686847293000",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+            "extension": [
+              {
+                "url": "registrationType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                      "code": "R",
+                      "display": "Regular"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "preferredBranchSurgery",
+                "valueReference": {
+                  "reference": "Location/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "8031590109"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "TESTANONHARRIS",
+            "given": [
+              "MIRIAN"
+            ],
+            "prefix": [
+              "MS"
+            ]
+          }
+        ],
+        "birthDate": "1984-07-10",
+        "gender": "female",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "1 DARWIN DANCE"
+            ],
+            "city": "BRISTOL",
+            "district": "AVON",
+            "postalCode": "BR5 5BR"
+          }
+        ],
+        "generalPractitioner": {
+          "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+        },
+        "managingOrganization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Immunisations",
+        "code": {
+          "coding": [
+            {
+              "display": "Immunisations",
+              "system": "http://snomed.info/sct",
+              "code": "1102181000000102"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "date": "2023-06-29T11:42:32+01:00",
+        "orderedBy": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/list-order",
+              "code": "system",
+              "display": "Sorted by System"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1060971000000108",
+                  "display": "General practice service"
+                }
+              ]
+            }
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "Immunization/53322e1b-c225-420d-a552-2299bb319dd3"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/22cb5f73-0180-48e2-ac38-222466603f20"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/9cd11424-ba54-4e27-9c22-1545803a1182"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/90087cac-ec3e-4923-a39d-7114f989f403"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/3ad43dac-cb2d-4c9d-a046-c33dcacd48f2"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/1a41ec3c-f451-428b-aeed-69b4bc8a5dc2"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/a3dad908-8285-47bd-964c-9455938196b8"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/3c51d225-292c-44bd-9144-401035a5813a"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/0ff41285-5bcf-46d8-ac8d-befb142161fd"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/84d11305-bfc8-4fc5-afee-622bb298a4bc"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/249290d0-eb4f-4160-a09d-53e3befada68"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/3d89fe17-c4c9-46c8-b7d4-fd3b0c498507"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/e216cc41-3ace-4442-9616-ee9256b35352"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/b04b4b80-600b-40a2-b6d1-71eaf49fa60b"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/c1f6dcbc-e192-428f-a28b-df8e04bfa41c"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/39e3d25c-3165-493d-be09-7b97ced63bdc"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/31aa1725-5e91-4150-96c2-70693eac2741"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/74c891fd-93ce-4d6d-afc6-d0408fd55f5e"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/f72a7be0-aa14-40c9-8864-9d9b54882678"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/860f95f3-64cb-4414-8552-e674922d32ef"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/8b638669-7f23-4405-9393-1c79a59099c0"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/eee69af0-3872-4af3-8f55-614241b5aec1"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/00667e3d-c23d-493a-b83c-e78459d0b437"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/ce4f8f9c-8dea-490d-b553-3d41e32f0cd9"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/bc10ddff-1954-49f3-8498-2f7654c937f2"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/6ad8242e-6d36-4b4e-b10f-175e97c71b72"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/9c687fff-a26b-4494-b3eb-72bfe49b2ca0"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/bf07b6b1-d797-4224-9a88-5a2ffb168335"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/8b44519c-8da8-48ac-a2ac-205fc7f4b9ca"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/50ac419f-9b68-4fef-8ce1-c787eab6df43"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/a8c14a95-7767-446c-954a-bd204aade5a9"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/c0fd72d1-1263-409b-944a-8fcfedaf7a2b"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eee69af0-3872-4af3-8f55-614241b5aec1",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1998-02-04T14:15:09Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "653..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of Bacillus Calmette-Guerin vaccine",
+                  "code": "42284007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Tuberculosis (BCG) vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "eee69af0-3872-4af3-8f55-614241b5aec1"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/73085d43-cf41-4f9f-a3ac-990cf3adf250"
+        },
+        "date": "1997-10-09",
+        "primarySource": false,
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372464004",
+              "display": "Intradermal route"
+            }
+          ],
+          "text": "Intradermal"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: BCG"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "53322e1b-c225-420d-a552-2299bb319dd3",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6541.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of first dose of vaccine product containing only Corynebacterium diphtheriae antigen",
+                  "code": "170320003",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "First diphtheria vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "53322e1b-c225-420d-a552-2299bb319dd3"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/774de404-2d3b-4711-b0f8-85d9c91cc8d6"
+        },
+        "date": "1984-09-27",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1984-11-15"
+          },
+          {
+            "text": "Type of Immunisation: DIPHTHERIA"
+          },
+          {
+            "text": "Stage: 1"
+          },
+          {
+            "text": "Text: Type: DIPHTHERIA, Stage: 1, Status: Given, Due Date: 15/11/1984, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "DIPHTHERIA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "0ff41285-5bcf-46d8-ac8d-befb142161fd",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6543.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of third dose of vaccine product containing only Corynebacterium diphtheriae antigen (procedure)",
+                  "code": "170322006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Third diphtheria vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "0ff41285-5bcf-46d8-ac8d-befb142161fd"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/79d5c9ca-eb87-4c37-963b-1ef276e73488"
+        },
+        "date": "1985-06-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1988-05-21"
+          },
+          {
+            "text": "Type of Immunisation: DIPHTHERIA"
+          },
+          {
+            "text": "Stage: 3"
+          },
+          {
+            "text": "Text: Type: DIPHTHERIA, Stage: 3, Status: Given, Due Date: 21/05/1988, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "DIPHTHERIA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "b04b4b80-600b-40a2-b6d1-71eaf49fa60b",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6544.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Corynebacterium diphtheriae antigen",
+                  "code": "170323001",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster diphtheria vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "b04b4b80-600b-40a2-b6d1-71eaf49fa60b"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1999-04-12"
+          },
+          {
+            "text": "Type of Immunisation: DIPHTHERIA"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: Type: DIPHTHERIA, Stage: B, Status: Given, Due Date: 12/04/1999, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "DIPHTHERIA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "9c687fff-a26b-4494-b3eb-72bfe49b2ca0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-12-17T10:43:13Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6544.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Corynebacterium diphtheriae antigen",
+                  "code": "170323001",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster diphtheria vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "9c687fff-a26b-4494-b3eb-72bfe49b2ca0"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/3d887c16-6ece-40bb-ac6f-fa3f5bd89233"
+        },
+        "date": "2002-12-17",
+        "primarySource": false,
+        "lotNumber": "aventis u1582-2 ex 10/04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: DIPHTHERIA"
+          },
+          {
+            "text": "Stage: B2"
+          },
+          {
+            "text": "Text: R deltoid"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "DIPHTHERIA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "22cb5f73-0180-48e2-ac38-222466603f20",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6551.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of first dose of vaccine product containing only Bordetella pertussis antigen",
+                  "code": "170326009",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "First pertussis vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "22cb5f73-0180-48e2-ac38-222466603f20"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/774de404-2d3b-4711-b0f8-85d9c91cc8d6"
+        },
+        "date": "1984-09-27",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1984-11-15"
+          },
+          {
+            "text": "Type of Immunisation: PERTUSSIS"
+          },
+          {
+            "text": "Stage: 1"
+          },
+          {
+            "text": "Text: Type: PERTUSSIS, Stage: 1, Status: Given, Due Date: 15/11/1984, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "PERTUSSIS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "3ad43dac-cb2d-4c9d-a046-c33dcacd48f2",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6552.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of second dose of vaccine product containing only Bordetella pertussis antigen",
+                  "code": "170327000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Second pertussis vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "3ad43dac-cb2d-4c9d-a046-c33dcacd48f2"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/c4b8c19d-034d-45af-87d4-075dd2d31147"
+        },
+        "date": "1984-11-29",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1985-04-28"
+          },
+          {
+            "text": "Type of Immunisation: PERTUSSIS"
+          },
+          {
+            "text": "Stage: 2"
+          },
+          {
+            "text": "Text: Type: PERTUSSIS, Stage: 2, Status: Given, Due Date: 28/04/1985, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "PERTUSSIS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "84d11305-bfc8-4fc5-afee-622bb298a4bc",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6553.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of third dose of vaccine product containing only Bordetella pertussis antigen",
+                  "code": "170328005",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Third pertussis vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "84d11305-bfc8-4fc5-afee-622bb298a4bc"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/79d5c9ca-eb87-4c37-963b-1ef276e73488"
+        },
+        "date": "1985-06-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1988-05-21"
+          },
+          {
+            "text": "Type of Immunisation: PERTUSSIS"
+          },
+          {
+            "text": "Stage: 3"
+          },
+          {
+            "text": "Text: Type: PERTUSSIS, Stage: 3, Status: Given, Due Date: 21/05/1988, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "PERTUSSIS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "9cd11424-ba54-4e27-9c22-1545803a1182",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6561.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of first dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170330007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "First tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "9cd11424-ba54-4e27-9c22-1545803a1182"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/774de404-2d3b-4711-b0f8-85d9c91cc8d6"
+        },
+        "date": "1984-09-27",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1984-11-15"
+          },
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: 1"
+          },
+          {
+            "text": "Text: Type: TETANUS, Stage: 1, Status: Given, Due Date: 15/11/1984, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "860f95f3-64cb-4414-8552-e674922d32ef",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1996-10-23T16:59:29+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65B..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Rubella virus antigen (procedure)",
+                  "code": "82314000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Rubella vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "860f95f3-64cb-4414-8552-e674922d32ef"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/4f88a627-2939-4d8e-bf4a-db448a1044d3"
+        },
+        "date": "1994-11",
+        "primarySource": false,
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: RUBELLA"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "1a41ec3c-f451-428b-aeed-69b4bc8a5dc2",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6562.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of second dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170331006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Second tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "1a41ec3c-f451-428b-aeed-69b4bc8a5dc2"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/c4b8c19d-034d-45af-87d4-075dd2d31147"
+        },
+        "date": "1984-11-29",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1985-04-28"
+          },
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: 2"
+          },
+          {
+            "text": "Text: Type: TETANUS, Stage: 2, Status: Given, Due Date: 28/04/1985, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "249290d0-eb4f-4160-a09d-53e3befada68",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6563.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of third dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170332004",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Third tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "249290d0-eb4f-4160-a09d-53e3befada68"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/79d5c9ca-eb87-4c37-963b-1ef276e73488"
+        },
+        "date": "1985-06-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1988-05-21"
+          },
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: 3"
+          },
+          {
+            "text": "Text: Type: TETANUS, Stage: 3, Status: Given, Due Date: 21/05/1988, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "c1f6dcbc-e192-428f-a28b-df8e04bfa41c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6564.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170333009",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "c1f6dcbc-e192-428f-a28b-df8e04bfa41c"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1999-04-12"
+          },
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: Type: TETANUS, Stage: B, Status: Given, Due Date: 12/04/1999, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "bf07b6b1-d797-4224-9a88-5a2ffb168335",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-12-17T10:43:13Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6564.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170333009",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "bf07b6b1-d797-4224-9a88-5a2ffb168335"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/3d887c16-6ece-40bb-ac6f-fa3f5bd89233"
+        },
+        "date": "2002-12-17",
+        "primarySource": false,
+        "lotNumber": "aventis u1582-2 ex 10/04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: B2"
+          },
+          {
+            "text": "Text: R deltoid"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "8b44519c-8da8-48ac-a2ac-205fc7f4b9ca",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-12-17T10:44:00Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "657I.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of single dose of vaccine product containing only Neisseria meningitidis serogroup C antigen (procedure)",
+                  "code": "314450000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Single meningitis C vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "8b44519c-8da8-48ac-a2ac-205fc7f4b9ca"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/3d887c16-6ece-40bb-ac6f-fa3f5bd89233"
+        },
+        "date": "2002-12-17",
+        "primarySource": false,
+        "lotNumber": "meningitec 85869 ex 2/04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MENC"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "90087cac-ec3e-4923-a39d-7114f989f403",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6581.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of first dose of vaccine product containing only Human poliovirus antigen",
+                  "code": "170353008",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "First polio vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "90087cac-ec3e-4923-a39d-7114f989f403"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/774de404-2d3b-4711-b0f8-85d9c91cc8d6"
+        },
+        "date": "1984-09-27",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1984-11-15"
+          },
+          {
+            "text": "Type of Immunisation: POLIO"
+          },
+          {
+            "text": "Stage: 1"
+          },
+          {
+            "text": "Text: Type: POLIO, Stage: 1, Status: Given, Due Date: 15/11/1984, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "POLIO",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "a3dad908-8285-47bd-964c-9455938196b8",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6582.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of second dose of vaccine product containing only Human poliovirus antigen (procedure)",
+                  "code": "170354002",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Second polio vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "a3dad908-8285-47bd-964c-9455938196b8"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/c4b8c19d-034d-45af-87d4-075dd2d31147"
+        },
+        "date": "1984-11-29",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1985-04-28"
+          },
+          {
+            "text": "Type of Immunisation: POLIO"
+          },
+          {
+            "text": "Stage: 2"
+          },
+          {
+            "text": "Text: Type: POLIO, Stage: 2, Status: Given, Due Date: 28/04/1985, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "POLIO",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "3d89fe17-c4c9-46c8-b7d4-fd3b0c498507",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6583.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of third dose of vaccine product containing only Human poliovirus antigen",
+                  "code": "170355001",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Third polio vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "3d89fe17-c4c9-46c8-b7d4-fd3b0c498507"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/79d5c9ca-eb87-4c37-963b-1ef276e73488"
+        },
+        "date": "1985-06-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1988-05-21"
+          },
+          {
+            "text": "Type of Immunisation: POLIO"
+          },
+          {
+            "text": "Stage: 3"
+          },
+          {
+            "text": "Text: Type: POLIO, Stage: 3, Status: Given, Due Date: 21/05/1988, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "POLIO",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "39e3d25c-3165-493d-be09-7b97ced63bdc",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:26Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6584.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Human poliovirus antigen",
+                  "code": "170356000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster polio vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "39e3d25c-3165-493d-be09-7b97ced63bdc"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1999-04-12"
+          },
+          {
+            "text": "Type of Immunisation: POLIO"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: Type: POLIO, Stage: B, Status: Given, Due Date: 12/04/1999, Source: Source unknown."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "POLIO",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "50ac419f-9b68-4fef-8ce1-c787eab6df43",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-12-17T10:43:44Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6584.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Human poliovirus antigen",
+                  "code": "170356000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster polio vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "50ac419f-9b68-4fef-8ce1-c787eab6df43"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/3d887c16-6ece-40bb-ac6f-fa3f5bd89233"
+        },
+        "date": "2002-12-17",
+        "primarySource": false,
+        "lotNumber": "skb opv s126WL ex 5/03",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260548002",
+              "display": "Oral route"
+            }
+          ],
+          "text": "Oral"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: POLIO"
+          },
+          {
+            "text": "Stage: B2"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "POLIO",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "e216cc41-3ace-4442-9616-ee9256b35352",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65A1.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Measles morbillivirus antigen",
+                  "code": "47435007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Measles vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "e216cc41-3ace-4442-9616-ee9256b35352"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/c78cd6af-feb1-47a7-9686-0ca75369d302"
+        },
+        "date": "1985-09-12",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MEASLES"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "31aa1725-5e91-4150-96c2-70693eac2741",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65A1.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Measles morbillivirus antigen",
+                  "code": "47435007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Measles vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "31aa1725-5e91-4150-96c2-70693eac2741"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MEASLES"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "8b638669-7f23-4405-9393-1c79a59099c0",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1996-10-23T16:59:28+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65A1.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Measles morbillivirus antigen",
+                  "code": "47435007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Measles vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "8b638669-7f23-4405-9393-1c79a59099c0"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/4f88a627-2939-4d8e-bf4a-db448a1044d3"
+        },
+        "date": "1994-11",
+        "primarySource": false,
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MEASLES"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "00667e3d-c23d-493a-b83c-e78459d0b437",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-10-22T17:45:28+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65A1.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Measles morbillivirus antigen",
+                  "code": "47435007",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Measles vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "00667e3d-c23d-493a-b83c-e78459d0b437"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/601a428b-19f9-4361-9ba8-933ddafec37d"
+        },
+        "date": "2002-10-22",
+        "primarySource": false,
+        "lotNumber": "priorix MJR486a44a/482 ex1.04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MEASLES"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: L deltoid"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "MEASLES",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "74c891fd-93ce-4d6d-afc6-d0408fd55f5e",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65B..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Rubella virus antigen (procedure)",
+                  "code": "82314000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Rubella vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "74c891fd-93ce-4d6d-afc6-d0408fd55f5e"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: RUBELLA"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "ce4f8f9c-8dea-490d-b553-3d41e32f0cd9",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-10-22T17:45:29+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65B..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Rubella virus antigen (procedure)",
+                  "code": "82314000",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Rubella vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "ce4f8f9c-8dea-490d-b553-3d41e32f0cd9"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/601a428b-19f9-4361-9ba8-933ddafec37d"
+        },
+        "date": "2002-10-22",
+        "primarySource": false,
+        "lotNumber": "priorix MJR486a44a/482 ex1.04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: RUBELLA"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: L deltoid"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "RUBELLA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "bc10ddff-1954-49f3-8498-2f7654c937f2",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-10-22T17:46:19+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "bc10ddff-1954-49f3-8498-2f7654c937f2"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Special Risk Group"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/601a428b-19f9-4361-9ba8-933ddafec37d"
+        },
+        "date": "2002-10-22",
+        "primarySource": false,
+        "lotNumber": "aventis w5869-1 ex5/03 R delto",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 2003-10-22"
+          },
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Text: Type: FLU, Stage: 0, Status: Given, Due Date: 22/10/2003, Method: Intramuscular, Source: In this Practice, Reason: Special Risk Group, Reason for immunisation given text: 5, Batch No: aventis w5869-1 ex5/03 R delto."
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "f72a7be0-aa14-40c9-8864-9d9b54882678",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "1994-12-10T02:54:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65F5.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Mumps orthorubulavirus antigen",
+                  "code": "50583002",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Mumps vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "f72a7be0-aa14-40c9-8864-9d9b54882678"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/1b60a8b0-a13f-472d-91b7-5e0987e1adf5"
+        },
+        "date": "1989-04-14",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MUMPS"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "6ad8242e-6d36-4b4e-b10f-175e97c71b72",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2002-10-22T17:45:30+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65F5.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Mumps orthorubulavirus antigen",
+                  "code": "50583002",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Mumps vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "6ad8242e-6d36-4b4e-b10f-175e97c71b72"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Routine Measure"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/601a428b-19f9-4361-9ba8-933ddafec37d"
+        },
+        "date": "2002-10-22",
+        "primarySource": false,
+        "lotNumber": "priorix MJR486a44a/482 ex1.04",
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "255559005",
+              "display": "Intramuscular route"
+            }
+          ],
+          "text": "Intramuscular"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1ef39bdc-5cb3-4fcf-be70-106d0eefc10e"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: MUMPS"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Text: L deltoid"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "MUMPS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "a8c14a95-7767-446c-954a-bd204aade5a9",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2022-10-10T18:00:00+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65F0100",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of first dose of 2019-nCoV (novel coronavirus) vaccine",
+                  "code": "1324681000000101",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Administration of first dose of SARS-CoV-2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "a8c14a95-7767-446c-954a-bd204aade5a9"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Epidemic"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/e00820f1-6291-43b0-9b77-b6644c81e124"
+        },
+        "date": "2021",
+        "primarySource": true,
+        "lotNumber": "12!\" - 45?/ ABC*&",
+        "site": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368208006",
+              "display": "Left arm"
+            }
+          ],
+          "text": "Left arm"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263887005",
+              "display": "Subcutaneous route"
+            }
+          ],
+          "text": "Subcutaneous"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 2020-09-01"
+          },
+          {
+            "text": "Type of Immunisation: COVMODERNA"
+          },
+          {
+            "text": "Stage: 1"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "COVMODERNA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "3c51d225-292c-44bd-9144-401035a5813a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2022-10-10T18:13:13+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6542.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of second dose of vaccine product containing only Corynebacterium diphtheriae antigen",
+                  "code": "170321004",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Second diphtheria vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "3c51d225-292c-44bd-9144-401035a5813a"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Traveller, Ne1"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/c4b8c19d-034d-45af-87d4-075dd2d31147"
+        },
+        "date": "1984-11-29",
+        "primarySource": false,
+        "lotNumber": "12345678901234567890123456789x",
+        "site": {
+          "text": "Upper Right thigh"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372464004",
+              "display": "Intradermal route"
+            }
+          ],
+          "text": "Intradermal"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 1985-04-28"
+          },
+          {
+            "text": "Type of Immunisation: DIPHTHERIA"
+          },
+          {
+            "text": "Stage: 2"
+          },
+          {
+            "text": "Text: Type: DIPHTHERIA, Stage: 2, Status: Given, Due Date: 28/04/1985, Source: Source unknown.\r\n\r\n1 blank line above this line."
+          },
+          {
+            "text": "Reason: Ne1"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "DIPHTHERIA",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "c0fd72d1-1263-409b-944a-8fcfedaf7a2b",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2022-10-10T18:23:46+01:00"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65C..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Yellow fever virus antigen",
+                  "code": "67308009",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Yellow fever vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "c0fd72d1-1263-409b-944a-8fcfedaf7a2b"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "explanation": {
+          "reason": [
+            {
+              "text": "Special Risk Group, This Is The Nature Of Risk Field - Patient Has Weakened Immu"
+            }
+          ]
+        },
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+        },
+        "encounter": {
+          "reference": "Encounter/e00820f1-6291-43b0-9b77-b6644c81e124"
+        },
+        "date": "2022-10-10",
+        "primarySource": true,
+        "site": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "74964007",
+              "display": "other"
+            }
+          ],
+          "text": "Other"
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260617000",
+              "display": "Nasal route"
+            }
+          ],
+          "text": "Intranasal"
+        },
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/1f6f043c-69d6-4339-b6e1-1e31acd548b9"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Due Date: 2032-10-10"
+          },
+          {
+            "text": "Type of Immunisation: YELLOW"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Text: Notes line 1 !\"£\r\nNotes line 2 $%^\r\nNotes line 3 ^&*\r\nNotes line 4 ()_\r\nNotes line 5 ,@'\r\nEnd"
+          },
+          {
+            "text": "Reason: This Is The Nature Of Risk Field - Patient Has Weakened Immu"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3e9d65a0-ea7a-4779-abf1-fb835df9bcce",
+        "name": "Automation England",
+        "meta": {
+          "versionId": "1653041422",
+          "lastUpdated": "2022-05-20T10:10:22Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "B83621"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-OrganisationType-1",
+                "code": "gp-practice"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "use": "work",
+            "system": "email",
+            "value": "springfield@yaboo.com"
+          },
+          {
+            "use": "work",
+            "system": "phone",
+            "value": "07981543221"
+          },
+          {
+            "system": "other",
+            "value": "07982777777"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "SPRINGFIELD SURGERY, MAIN  14 ELEANOR STREET",
+              "GRIMSBY TOWN CENTRE"
+            ],
+            "city": "GRIMSBY",
+            "district": "N E LINCONSHIRE",
+            "postalCode": "DN32 9DT"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c4c9f629-a82b-410e-8e4d-22ed3198bd08",
+        "meta": {
+          "versionId": "1597325652",
+          "lastUpdated": "2020-08-13T13:34:12Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "335908096037"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "TUNNEY",
+            "given": [
+              "GENE"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "c4c9f629-a82b-410e-8e4d-22ed3198bd08",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "2534c576-aaed-4be3-a1f1-f2c25c60fa33",
+        "meta": {
+          "versionId": "817138748",
+          "lastUpdated": "1995-11-23T14:59:08Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Unknown Member of Staff",
+            "given": [
+              "Staff"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "2534c576-aaed-4be3-a1f1-f2c25c60fa33",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9a42736f-cbb1-49bb-8806-5a9de0401080",
+        "meta": {
+          "versionId": "1244737431",
+          "lastUpdated": "2009-06-11T16:23:51Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "631335432516"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Delaney",
+            "given": [
+              "Colin"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "9a42736f-cbb1-49bb-8806-5a9de0401080",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/9a42736f-cbb1-49bb-8806-5a9de0401080"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "1f6f043c-69d6-4339-b6e1-1e31acd548b9",
+        "meta": {
+          "versionId": "1628267649",
+          "lastUpdated": "2021-08-06T16:34:09Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "218742606528"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Cole",
+            "given": [
+              "Graham",
+              "Test"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "gender": "other"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "1f6f043c-69d6-4339-b6e1-1e31acd548b9",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/1f6f043c-69d6-4339-b6e1-1e31acd548b9"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    }
+  ],
+  "id": "0ad08c88-2243-42a9-92df-9b03b3dc0970"
+}

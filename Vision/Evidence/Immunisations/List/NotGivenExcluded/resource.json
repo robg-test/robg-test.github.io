@@ -1,0 +1,209 @@
+{
+  "resourceType": "List",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Immunisations",
+  "code": {
+    "coding": [
+      {
+        "display": "Immunisations",
+        "system": "http://snomed.info/sct",
+        "code": "1102181000000102"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "date": "2023-06-29T11:42:33+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1060971000000108",
+            "display": "General practice service"
+          }
+        ]
+      }
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "Immunization/53322e1b-c225-420d-a552-2299bb319dd3"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/22cb5f73-0180-48e2-ac38-222466603f20"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/9cd11424-ba54-4e27-9c22-1545803a1182"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/90087cac-ec3e-4923-a39d-7114f989f403"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/3ad43dac-cb2d-4c9d-a046-c33dcacd48f2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/1a41ec3c-f451-428b-aeed-69b4bc8a5dc2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/a3dad908-8285-47bd-964c-9455938196b8"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/3c51d225-292c-44bd-9144-401035a5813a"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/0ff41285-5bcf-46d8-ac8d-befb142161fd"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/84d11305-bfc8-4fc5-afee-622bb298a4bc"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/249290d0-eb4f-4160-a09d-53e3befada68"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/3d89fe17-c4c9-46c8-b7d4-fd3b0c498507"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/e216cc41-3ace-4442-9616-ee9256b35352"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/b04b4b80-600b-40a2-b6d1-71eaf49fa60b"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/c1f6dcbc-e192-428f-a28b-df8e04bfa41c"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/39e3d25c-3165-493d-be09-7b97ced63bdc"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/31aa1725-5e91-4150-96c2-70693eac2741"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/74c891fd-93ce-4d6d-afc6-d0408fd55f5e"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/f72a7be0-aa14-40c9-8864-9d9b54882678"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/860f95f3-64cb-4414-8552-e674922d32ef"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/8b638669-7f23-4405-9393-1c79a59099c0"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/eee69af0-3872-4af3-8f55-614241b5aec1"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/00667e3d-c23d-493a-b83c-e78459d0b437"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/ce4f8f9c-8dea-490d-b553-3d41e32f0cd9"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/bc10ddff-1954-49f3-8498-2f7654c937f2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/6ad8242e-6d36-4b4e-b10f-175e97c71b72"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/9c687fff-a26b-4494-b3eb-72bfe49b2ca0"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/bf07b6b1-d797-4224-9a88-5a2ffb168335"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/8b44519c-8da8-48ac-a2ac-205fc7f4b9ca"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/50ac419f-9b68-4fef-8ce1-c787eab6df43"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/a8c14a95-7767-446c-954a-bd204aade5a9"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/c0fd72d1-1263-409b-944a-8fcfedaf7a2b"
+      }
+    }
+  ]
+}

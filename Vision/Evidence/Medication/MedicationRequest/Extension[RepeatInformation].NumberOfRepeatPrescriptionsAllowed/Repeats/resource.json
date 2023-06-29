@@ -1,0 +1,104 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "53483194-5576-4784-b1ed-bbf9f309f4caMP",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+      "extension": [
+        {
+          "url": "numberOfRepeatPrescriptionsAllowed",
+          "valueUnsignedInt": 3
+        },
+        {
+          "url": "numberOfRepeatPrescriptionsIssued",
+          "valueUnsignedInt": 2
+        },
+        {
+          "url": "authorisationExpiryDate",
+          "valueDateTime": "2011-09-24"
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatusReason-1",
+      "extension": [
+        {
+          "url": "statusReason",
+          "valueCodeableConcept": {
+            "text": "None, undefined"
+          }
+        },
+        {
+          "url": "statusChangeDate",
+          "valueDateTime": "2011-12-15T00:00:00"
+        }
+      ]
+    },
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "repeat",
+            "display": "Repeat",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "53483194-5576-4784-b1ed-bbf9f309f4caMP"
+    }
+  ],
+  "status": "completed",
+  "intent": "plan",
+  "medicationReference": {
+    "reference": "Medication/53483194-5576-4784-b1ed-bbf9f309f4caM"
+  },
+  "subject": {
+    "reference": "Patient/2e79deba-7e71-419a-a3e0-2e981679eaea"
+  },
+  "context": {
+    "reference": "Encounter/2be42c4b-af3d-4fa7-8165-b1dc35691ae3"
+  },
+  "authoredOn": "2010-09-24",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/3ff1d94c-c003-44de-8e79-b6e2ac98e731"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+    }
+  },
+  "recorder": {
+    "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+  },
+  "dosageInstruction": [
+    {
+      "text": "No information available"
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2010-09-24",
+      "end": "2011-09-24"
+    },
+    "quantity": {
+      "value": 500,
+      "unit": "g pump"
+    },
+    "expectedSupplyDuration": {
+      "code": "d",
+      "unit": "day",
+      "system": "http://unitsofmeasure.org"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType": "Condition",
+  "id": "c36e2f05-86b4-4cce-be51-8097be006b98",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Observation/14dec731-93b7-40a8-90c7-d5292e8b6ac2"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/1f4c565e-5db0-40a1-8087-351f01c00444"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+      "valueReference": {
+        "reference": "Observation/14dec731-93b7-40a8-90c7-d5292e8b6ac2"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "c36e2f05-86b4-4cce-be51-8097be006b98"
+    }
+  ],
+  "clinicalStatus": "inactive",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "J4...12",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Inflammatory bowel disease (disorder)",
+        "code": "24526004",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Inflammatory bowel disease"
+  },
+  "subject": {
+    "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+  },
+  "onsetDateTime": "1984-04-16",
+  "assertedDate": "2020-01-14T11:46:07Z",
+  "asserter": {
+    "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+  }
+}

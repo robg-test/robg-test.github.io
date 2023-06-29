@@ -1,0 +1,71 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "a88a97b5-53fc-4da3-8d56-ac5596307c46",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ReferralRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "a88a97b5-53fc-4da3-8d56-ac5596307c46"
+    }
+  ],
+  "status": "unknown",
+  "intent": "order",
+  "priority": "urgent",
+  "subject": {
+    "reference": "Patient/da7d38fd-dc8b-4cf6-a9f5-e8acc996f67f"
+  },
+  "context": {
+    "reference": "Encounter/2a45ceef-5e7b-4846-ba7b-1955bee21631"
+  },
+  "authoredOn": "2003-07-31",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "7046200",
+          "system": "http://read.info/readv2",
+          "userSelected": true
+        },
+        {
+          "display": "Intrathecal injection of chemotherapeutic agent (procedure)",
+          "code": "171765004",
+          "system": "http://snomed.info/sct"
+        }
+      ],
+      "text": "Intrathecal chemotherapy"
+    }
+  ],
+  "note": [
+    {
+      "text": "Source:undefined"
+    },
+    {
+      "text": "Referral Type:Day Case"
+    },
+    {
+      "text": "Attendance Type:Subsequent visit"
+    },
+    {
+      "text": "Contract Status:HA contract"
+    },
+    {
+      "text": "Status:undefined"
+    },
+    {
+      "text": "NHS Speciality:Medical Oncology"
+    },
+    {
+      "text": "TP Speciality:General Medical"
+    },
+    {
+      "text": "Actiondate:2003-08-26"
+    },
+    {
+      "text": "Freetext:undefined"
+    }
+  ]
+}

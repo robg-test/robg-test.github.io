@@ -1,0 +1,65 @@
+{
+  "resourceType": "ProcedureRequest",
+  "id": "8ef6bfd3-9fc5-40a1-9e17-266e8b715710",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProcedureRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "8ef6bfd3-9fc5-40a1-9e17-266e8b715710"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "code": {
+    "coding": [
+      {
+        "code": "16C6.00",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Back pain",
+        "code": "161891005",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Back pain without radiation NOS"
+  },
+  "subject": {
+    "reference": "Patient/d76f7fdd-9223-44e8-81d9-bcc9ea5ec319"
+  },
+  "context": {
+    "reference": "Encounter/16386c99-9b9f-4424-b18e-7adb37dafdc3"
+  },
+  "occurrenceDateTime": "2023-01-01",
+  "authoredOn": "2022-12-20T00:00:00Z",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+    }
+  },
+  "reasonCode": {
+    "coding": [
+      {
+        "code": "16C6.00",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Back pain",
+        "code": "161891005",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Back pain without radiation NOS"
+  },
+  "note": [
+    {
+      "text": "Testing INT-Recall- Tried attaching letter -Chaitanya"
+    }
+  ]
+}

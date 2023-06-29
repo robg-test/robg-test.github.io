@@ -1,0 +1,171 @@
+{
+  "resourceType": "Condition",
+  "id": "4d66342f-bf90-4222-950e-d56264e99433",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/1e57d514-bd76-4d2d-8b02-a496af505cc4"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/f4f23e49-a580-48c7-8a89-6ba60b7ad08e"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/ab624cfa-1c99-48ae-a875-b4e9bafd521c"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/20f4dc21-554b-4e37-824c-694906250895"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/d752f0d5-5a0e-45e6-9d57-58cda3b71868"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/1036ae9c-2985-44f2-9f7e-525dd046df4e"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/1649d6bf-9fb8-46ba-86a3-83845cff715c"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/adb3de08-e841-436b-8a8e-918572df67e6"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/fcd25980-f01f-4bca-a437-7494a1edd22d"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/60219ff4-d9bd-4b6f-a458-53dda71d9e51"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/2b9f742a-8bd2-4252-a30c-632b40a1e2bb"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/4ba09e4f-2b61-452d-a871-05c332a863ed"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/380ff2e2-eb3a-45aa-9a07-80ad2444b661"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/61086123-4543-448a-b713-e88b62cb2df7"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/65483155-7d77-4863-8838-80e11777a3f5"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/1c8bab1c-e7f4-47a1-ba69-593ef8abd387"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/4d362665-0109-4ff8-8d0d-de3ccb9aa39c"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Immunization/d0b976c9-d471-4325-8ad2-f02f5d7254d6"
+      }
+    },
+    {
+      "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+      "valueReference": {
+        "reference": "Encounter/b3393175-e81d-4bbc-9ad8-90bcc99d6286"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "4d66342f-bf90-4222-950e-d56264e99433"
+    }
+  ],
+  "clinicalStatus": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "65...11",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Active or passive immunisation",
+        "code": "127785005",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Imported Immunisations"
+  },
+  "subject": {
+    "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+  },
+  "assertedDate": "2020-01-14T11:46:07Z",
+  "asserter": {
+    "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+  }
+}

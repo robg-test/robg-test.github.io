@@ -1,0 +1,71 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "0b3007a3-4973-425f-9dfb-15abf3370f6bMP",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "acute",
+            "display": "Acute",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "0b3007a3-4973-425f-9dfb-15abf3370f6bMP"
+    }
+  ],
+  "status": "completed",
+  "intent": "plan",
+  "medicationReference": {
+    "reference": "Medication/0b3007a3-4973-425f-9dfb-15abf3370f6bM"
+  },
+  "subject": {
+    "reference": "Patient/2e79deba-7e71-419a-a3e0-2e981679eaea"
+  },
+  "context": {
+    "reference": "Encounter/dd7490db-3ae8-464f-9df5-7045b3992160"
+  },
+  "authoredOn": "2007-12-17",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/9ad63720-5a60-46c3-af45-5fcf73059099"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+    }
+  },
+  "recorder": {
+    "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+  },
+  "dosageInstruction": [
+    {
+      "text": "1 AT START OF ATTACK"
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2007-12-17",
+      "end": "2007-12-17"
+    },
+    "quantity": {
+      "value": 6
+    },
+    "expectedSupplyDuration": {
+      "code": "d",
+      "unit": "day",
+      "system": "http://unitsofmeasure.org"
+    }
+  }
+}

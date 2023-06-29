@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-OperationOutcome-1"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "not-found",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1",
+            "code": "PATIENT_NOT_FOUND",
+            "display": "Patient not found"
+          }
+        ]
+      },
+      "diagnostics": "PDS result is sensitive OR No status file for patient [9726623340]"
+    }
+  ]
+}

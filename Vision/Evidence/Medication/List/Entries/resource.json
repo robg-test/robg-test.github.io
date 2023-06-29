@@ -1,0 +1,734 @@
+{
+  "resourceType": "List",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Medications and medical devices",
+  "code": {
+    "coding": [
+      {
+        "display": "Medications and medical devices",
+        "system": "http://snomed.info/sct",
+        "code": "933361000000108"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/2e79deba-7e71-419a-a3e0-2e981679eaea"
+  },
+  "date": "2023-06-29T11:42:41+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1060971000000108",
+            "display": "General practice service"
+          }
+        ]
+      }
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "Medication/344fe789-bc47-4d54-9449-9e625e615598MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7d2e5b73-456b-4264-8295-aa3cf424e3f0MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/05e0ae04-68a4-40b2-829f-b884de515340MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7470921d-7d11-4f10-80b6-37dd02779d75MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b1e83a15-d26f-42a6-9ed6-0006bad0ee95MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/4b604a92-ca75-4094-8aa5-123e7ce92af5MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/348e1cde-c4f8-4baf-8dec-35509985c128MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b1d6ffdc-722f-4524-bdab-44a1b9445bd7MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7f318dce-18c9-461b-a61c-e3b409b71caaMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0bee674f-1ac6-4122-a582-da18345b9654MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/5e4f6c57-02d1-42f9-92d3-6d28b41df823MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/cffb0b87-8e4a-4388-8ea9-a2d667301bedMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f0a29094-0f28-493e-964c-ee84a3f4e70dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/61abaf55-fe9d-4768-8571-d03518aaa096MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ebd5c9a9-55fd-4847-a5e3-7a4a905afe33MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/908b8fa6-7a06-487a-b9f7-25e256eda0d4MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3cfcf325-ba5d-4ea7-91c8-a020d2b2ec9eMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/157e7fde-d783-465e-8d12-e986b9b39bc9MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/cff79610-be76-493e-9d37-7ff2176484f5MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/fc4279b1-2198-49e6-bb49-45fa48d73ad3MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/26c89dad-41e7-4ef0-879d-415238309554MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/2269d70e-f424-41f4-b73a-5b0ca227b40eMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/96e6ef81-9da8-482d-8542-e35e3caad60bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/2f5d74be-4afa-47d0-b7d8-8a07e9e09dfdMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f63c621d-e028-4fa9-837f-aee54da70bf1MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ab06b711-e629-417f-a765-0e71fdbf3348MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/73461588-e22d-4bf4-9bb4-49558a6969e1MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d4afba05-f208-4d89-a5ee-8aeca84a2894MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c3cdc9ba-1153-4276-a2b5-b9bbacbd9c91MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/161c2e48-d64a-4ae9-928b-2d60997c1ec7MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/01f7e040-6b4d-4a05-b476-4deedab37424MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0eb347b9-1892-408a-a439-8fae35fa264bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ff2e50a8-9162-4202-b220-a4c46db85365MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a71a41bd-8d26-4f15-9895-902552e76609MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a8c495ee-a683-40b8-b4d8-ca0f74436fc8MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ffd704a5-8689-43e0-a2fd-7e5cda9459aaMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0ba37e83-7909-45a2-9414-7ad8daee42c6MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/9cec58e7-05de-4054-807e-a8e485a56d28MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/391e87c3-6900-41cf-8629-ab0f145fcd65MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c23ae471-91a2-43f5-997e-7e96100865cfMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/558958bf-cf32-4dca-8539-e71fd1228403MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/1e71d23d-c8a5-46c3-983d-b3a60460094fMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b72a12f0-a213-405a-9f89-51549fe76653MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7a02d71c-0224-487f-ac17-618a6f30c168MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/91cbd1a1-50e9-4612-a423-dc379a7edc74MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/9db7bfd0-0788-469b-a2a1-4f51dc3e32bdMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c61d1e45-1b4b-4f9c-8334-a3e3a1d6d60bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/da34d21a-5e2b-44f1-b8dc-89c8729e1801MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/1c587644-2537-4c0a-bb6a-8b30b872e959MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b6fa117c-7601-42c6-ac4b-e18dbb601d31MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3daa78c2-3f76-4e7c-b9e7-2339c39e898cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/2dd2b265-c0fb-445b-a891-3237712dc911MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3adb4073-6c74-4b08-99b3-5ef0efe9364aMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/4439b828-2b1e-4aef-bc5a-fea8887dd346MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/500552c6-f1fe-4414-a44b-91367250d855MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/8410a510-c305-41c3-b5be-a6ce65987bc4MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d811cd6e-9b80-4067-93e8-36b9e9551c4dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/e7b984c0-09bc-4e83-bff5-17d2d207c405MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/be8e6940-53c0-454e-9f26-a066d2d8bd90MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a6b4fb16-1e0b-448f-aa92-c89b8a64a2e6MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f446d440-b329-49d3-b7f9-c68c49474e79MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/67eb7183-12a3-4b08-be8d-c8febb8623e9MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ab463b1c-a450-461c-92b5-d6eee193d52cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c6325b81-11e8-4692-ad71-c815619cb72cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7b021a73-a360-4824-85fe-e36962d836c9MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d12d4513-6874-43d2-b86f-9e81689af7c9MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/aed80a37-5d8f-4d21-b2a6-45a5c7ba31c8MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0b3007a3-4973-425f-9dfb-15abf3370f6bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b8d00674-3693-488f-9872-57559bea561bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0bb2fa02-120f-4748-a484-528d2e314a11MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/94a54137-f652-4fad-bb23-4fc6a0a8bf87MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/e6699d1c-f8b7-42a7-b0bf-f59b52c27915MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/bf9dc3a7-60bf-463f-9d9c-2394803e0dfeMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d98d285e-600e-428f-b105-aa9e6daf926aMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/02caa0e3-8ee4-4f09-9b82-0e77a7422058MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d33c31a4-f764-4199-bd42-d8b2598b864aMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/bea45c8b-6f9c-4509-a25b-dc8fe01873feMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/ff1c6938-3336-4c23-b21a-ac93e61c0d38MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/2ac7d808-631d-44fa-9bca-54a7158ef597MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/fcb5968b-52e8-4bab-a417-5d7bd6fac9feMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/7f3540ca-bb66-4375-8071-b2a401390525MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/56f5bc2f-c23a-4175-ac1e-1fd8496ba255MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/07b456ca-148e-47df-afbe-c2c7694ebf42MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/86d6890b-ba3f-49c0-9333-0d474a7e7767MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a815e856-f661-40a3-8854-e7c94c1220b2MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/50e702dc-0cde-4aeb-8fe5-dc3482c45f1dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a2f6ad86-8388-4bcd-8b05-d021024f236bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b831bd05-1137-4caf-9348-42985e82ab4eMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/37e50d1c-6913-4157-acda-2eb252505e21MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/53483194-5576-4784-b1ed-bbf9f309f4caMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/63238b9c-13e1-412a-81aa-e6555d904f6cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/267f38b9-c3b0-4b63-b2c2-c516f9f4057dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/cb668a3c-da8f-4716-9309-5ad94d8e4e1bMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/9102f9a2-93d1-4cbe-9437-cd857fd9d5c5MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/26c60bc2-bcaa-4dc7-a9f1-c9b1ab924609MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f997a8d0-caee-47b1-aef2-7f8f9132d07cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/af9f4e85-0718-435a-87ef-0c6cccd3437cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a2fc5ccc-3063-4a3f-943f-4bb3a9584e06MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/6b076430-7d6d-4c57-9cfd-8fcf77250903MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/5e529f58-3529-4fff-8693-c10646dff640MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3645ea34-8280-4a47-a9fc-278c6d7cf66dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/93297670-2c60-4136-99a9-24095e93db25MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/355f38fc-1faf-4f5d-b660-acba50989092MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/23b9d785-afa3-4b48-a423-c29339edf270MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/dc24301d-a00c-4662-97d1-c040aa9932b2MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d722d83e-9890-44a5-be86-1627b2264a5fMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c263d886-7eea-4f12-8171-2ccf0da28345MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/11fdc9f7-aca2-4513-9b1b-c5cafa3c8237MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/d7d6fb7e-429f-47d5-b4c3-dfc26d65c9c9MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a6bf4b42-0f35-4d0f-8c4a-1e874185f2ecMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/c6383aa3-70be-484e-a8d1-54a7d21d4523MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/e4faf1bb-3c46-47da-8562-0ac940d6f411MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/19996c57-2819-4989-a337-2d2906ddf264MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/73ce05f0-9ecf-464b-bd7b-d0fe719b2dfbMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/6f56293d-8a44-4dd6-977c-1bdc2f534621MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/800327eb-e75d-40fb-bff0-a2b653555e2eMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/4a908c11-7093-4552-a959-1c4f28596aa2MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b112924e-f4eb-48e5-bca9-9e1e511f2f4dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/195affa8-f3d0-4952-9b77-9d9438d2e209MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/75de0540-69b3-484a-912b-de6d45f1762cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3950ebf7-d736-4d6e-a435-95db4a4f9408MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/0f4429f7-f684-4327-8c0f-c322782a204fMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/aa90c51a-3b73-49c1-975e-38fbf9092157MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3d5aa0bb-ad8c-41f4-9f9f-a0539202c3d0MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/e7ab5e2d-3cfa-4e6d-bf22-968750a16e67MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/badc1d56-c5ac-4236-9813-b3dd5aac7f22MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/5811a776-cf82-4661-a98c-0ad6bc11b4d0MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/a447b5d8-5e29-4433-9423-4fc7ac0d8c25MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/3285581d-73aa-49ec-97af-fd36c3a0ef44MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f274f78e-5f67-4a55-9502-01e4f40aac0dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/b658d584-f04e-43e7-a828-4beb90dda7d3MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/44b14236-76b0-41fa-9bd2-2e44abf41e2cMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/94449710-7048-48ff-9163-3b66512f6f71MS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/f35f6943-da47-4acb-9bf3-5a4eb7ca8c3dMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/1d717029-5f17-46ec-9989-d05a2c87810fMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/bf9244f2-7b44-4adf-9ea3-23c3a7e2662fMS"
+      }
+    },
+    {
+      "item": {
+        "reference": "Medication/fe267d5b-5706-4f76-9046-064823947551MS"
+      }
+    }
+  ]
+}

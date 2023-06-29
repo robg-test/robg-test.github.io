@@ -1,0 +1,3506 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "50d03523-d957-495c-94f4-16ab755781cc",
+        "meta": {
+          "versionId": "1686847292000",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+            "extension": [
+              {
+                "url": "registrationType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                      "code": "R",
+                      "display": "Regular"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "preferredBranchSurgery",
+                "valueReference": {
+                  "reference": "Location/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9689100823"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "PRIOR",
+            "given": [
+              "ANNE"
+            ],
+            "prefix": [
+              "MS"
+            ]
+          }
+        ],
+        "birthDate": "2019-03-10",
+        "gender": "female",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "ROLLO COURT  STRASBURG ROAD"
+            ],
+            "city": "LONDON",
+            "postalCode": "SW11 5HL"
+          }
+        ],
+        "telecom": [
+          {
+            "use": "mobile",
+            "system": "phone",
+            "value": "07725589001"
+          }
+        ],
+        "generalPractitioner": {
+          "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+        },
+        "managingOrganization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Immunisations",
+        "code": {
+          "coding": [
+            {
+              "display": "Immunisations",
+              "system": "http://snomed.info/sct",
+              "code": "1102181000000102"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "date": "2023-06-29T11:42:54+01:00",
+        "orderedBy": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/list-order",
+              "code": "system",
+              "display": "Sorted by System"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1060971000000108",
+                  "display": "General practice service"
+                }
+              ]
+            }
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "Immunization/1e57d514-bd76-4d2d-8b02-a496af505cc4"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/ab624cfa-1c99-48ae-a875-b4e9bafd521c"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/1036ae9c-2985-44f2-9f7e-525dd046df4e"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/adb3de08-e841-436b-8a8e-918572df67e6"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/60219ff4-d9bd-4b6f-a458-53dda71d9e51"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/4ba09e4f-2b61-452d-a871-05c332a863ed"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/61086123-4543-448a-b713-e88b62cb2df7"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/1c8bab1c-e7f4-47a1-ba69-593ef8abd387"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/d0b976c9-d471-4325-8ad2-f02f5d7254d6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Problems",
+        "code": {
+          "coding": [
+            {
+              "display": "Problems",
+              "system": "http://snomed.info/sct",
+              "code": "717711000000103"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "date": "2023-06-29T11:42:54+01:00",
+        "orderedBy": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/list-order",
+              "code": "system",
+              "display": "Sorted by System"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1060971000000108",
+                  "display": "General practice service"
+                }
+              ]
+            }
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/4d66342f-bf90-4222-950e-d56264e99433"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/c36e2f05-86b4-4cce-be51-8097be006b98"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/69f5adc1-0b15-4ad7-b890-0a2366f76c80"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/2158bed4-b81b-418d-b155-815143c17c0f"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/a8597a0a-234b-49ee-ba95-314c14043f6a"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/63735ecb-5b65-491d-b73e-e3352169e31a"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/42ef5572-6347-4530-803e-36d041ea4d1d"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/5dc8100a-31d0-46c9-8100-b3855e721ae1"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/d9be0b56-52f4-44dc-8c67-c18df139c404"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/69891e69-5839-4301-b42e-c1a2c65720dd"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/9731336b-be18-4e20-939a-90798cff6be1"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/d6b81045-e762-4d27-88b2-67328791645d"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/345afcee-a170-4cdd-b297-ef7192708bf6"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/77006692-9382-4261-b2ec-7193fac3f86a"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/95265593-cbfa-4b8f-a2a7-8d677d3a69ed"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/6372dd67-023f-403d-96ce-38f531d80e70"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/55f50d2c-25eb-4c51-90af-90ccc59dc5e6"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/4cd5541a-fb43-41fe-93ee-81ce27b4d5a2"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/c6ddb93c-c5b1-4dba-bf6a-9a9c61995e01"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/30cd4763-a16d-4762-85c8-8f5aa86d33c6"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/06280328-6ddb-4b63-9773-a4b9d5687020"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/fb80d6ca-c306-4313-84dc-422c94d4b35f"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/951706d7-3485-4f6d-b3bc-8acadf4c9099"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Problems - immunisations related to problems",
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "62271000000118"
+                    }
+                  ]
+                }
+              ],
+              "code": "problems-immunisations-related-to-problems",
+              "display": "Problems - immunisations related to problems",
+              "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/GPConnect-SecondaryListValues-1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "date": "2023-06-29T11:42:54+01:00",
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1060971000000108",
+                  "display": "General practice service"
+                }
+              ]
+            }
+          }
+        ],
+        "orderedBy": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/list-order",
+              "code": "system",
+              "display": "Sorted by System"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Immunization/1e57d514-bd76-4d2d-8b02-a496af505cc4"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/ab624cfa-1c99-48ae-a875-b4e9bafd521c"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/1036ae9c-2985-44f2-9f7e-525dd046df4e"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/adb3de08-e841-436b-8a8e-918572df67e6"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/60219ff4-d9bd-4b6f-a458-53dda71d9e51"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/4ba09e4f-2b61-452d-a871-05c332a863ed"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/61086123-4543-448a-b713-e88b62cb2df7"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/1c8bab1c-e7f4-47a1-ba69-593ef8abd387"
+            }
+          },
+          {
+            "item": {
+              "reference": "Immunization/d0b976c9-d471-4325-8ad2-f02f5d7254d6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4d66342f-bf90-4222-950e-d56264e99433",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/1e57d514-bd76-4d2d-8b02-a496af505cc4"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/f4f23e49-a580-48c7-8a89-6ba60b7ad08e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/ab624cfa-1c99-48ae-a875-b4e9bafd521c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/20f4dc21-554b-4e37-824c-694906250895"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/d752f0d5-5a0e-45e6-9d57-58cda3b71868"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/1036ae9c-2985-44f2-9f7e-525dd046df4e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/1649d6bf-9fb8-46ba-86a3-83845cff715c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/adb3de08-e841-436b-8a8e-918572df67e6"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/fcd25980-f01f-4bca-a437-7494a1edd22d"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/60219ff4-d9bd-4b6f-a458-53dda71d9e51"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/2b9f742a-8bd2-4252-a30c-632b40a1e2bb"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/4ba09e4f-2b61-452d-a871-05c332a863ed"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/380ff2e2-eb3a-45aa-9a07-80ad2444b661"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/61086123-4543-448a-b713-e88b62cb2df7"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/65483155-7d77-4863-8838-80e11777a3f5"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/1c8bab1c-e7f4-47a1-ba69-593ef8abd387"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/4d362665-0109-4ff8-8d0d-de3ccb9aa39c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Immunization/d0b976c9-d471-4325-8ad2-f02f5d7254d6"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/b3393175-e81d-4bbc-9ad8-90bcc99d6286"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "4d66342f-bf90-4222-950e-d56264e99433"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "65...11",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Active or passive immunisation",
+              "code": "127785005",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Imported Immunisations"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "assertedDate": "2020-01-14T11:46:07Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c36e2f05-86b4-4cce-be51-8097be006b98",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/14dec731-93b7-40a8-90c7-d5292e8b6ac2"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/1f4c565e-5db0-40a1-8087-351f01c00444"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/14dec731-93b7-40a8-90c7-d5292e8b6ac2"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "c36e2f05-86b4-4cce-be51-8097be006b98"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J4...12",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Inflammatory bowel disease (disorder)",
+              "code": "24526004",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Inflammatory bowel disease"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1984-04-16",
+        "assertedDate": "2020-01-14T11:46:07Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "69f5adc1-0b15-4ad7-b890-0a2366f76c80",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/b9418c59-4d3e-4a15-a4ee-d083ce66a5ae"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/6fde0b24-18e3-4265-84eb-96edddf9acdd"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/b9418c59-4d3e-4a15-a4ee-d083ce66a5ae"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "69f5adc1-0b15-4ad7-b890-0a2366f76c80"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J101.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Esophagitis (disorder)",
+              "code": "16761005",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Oesophagitis"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1984-12-12",
+        "assertedDate": "2020-01-14T11:46:07Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2158bed4-b81b-418d-b155-815143c17c0f",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/10a1bb01-e64c-4c6e-8d20-3b2e3e8eaa9e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/be85e974-3af9-4206-babd-2056530b1bb9"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "2158bed4-b81b-418d-b155-815143c17c0f"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "G634.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Stenosis, carotid artery",
+              "code": "64586002",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Carotid artery stenosis"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1985-09-23",
+        "assertedDate": "2020-01-14T11:46:08Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a8597a0a-234b-49ee-ba95-314c14043f6a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/52c69915-0531-4fab-bfde-47d06ce253bf"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/d0c0c1e4-4312-41db-be94-bcc33b4568a5"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/52c69915-0531-4fab-bfde-47d06ce253bf"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "a8597a0a-234b-49ee-ba95-314c14043f6a"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "F4K2800",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "VH - Vitreous hemorrhage",
+              "code": "31341008",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Vitreous haemorrhage"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1986-01-20",
+        "assertedDate": "2020-01-14T11:46:08Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "63735ecb-5b65-491d-b73e-e3352169e31a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/d2914dc6-4082-4e19-b640-364364ce9eaf"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/82040e76-468e-47a0-8424-19b7ff43e53c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/d2914dc6-4082-4e19-b640-364364ce9eaf"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "63735ecb-5b65-491d-b73e-e3352169e31a"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "F41z.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Sensory retinal detachment",
+              "code": "42059000",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Retinal detachment NOS"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1986-07-09",
+        "assertedDate": "2020-01-14T11:46:08Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "42ef5572-6347-4530-803e-36d041ea4d1d",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/fea352f2-3d68-4225-8097-57c4acb83a15"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/64a96402-4788-4c7e-b3f5-1a82e8924878"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/fea352f2-3d68-4225-8097-57c4acb83a15"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "42ef5572-6347-4530-803e-36d041ea4d1d"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "N110.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Cervical spondylosis without myelopathy (disorder)",
+              "code": "267970006",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Cervical spond.-no myelopathy"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1988-01-08",
+        "assertedDate": "2020-01-14T11:46:08Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "5dc8100a-31d0-46c9-8100-b3855e721ae1",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/3437c53e-453c-4620-8513-96bbbd10d47d"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/07f75192-9262-40ee-b127-a60dd81754c4"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/3437c53e-453c-4620-8513-96bbbd10d47d"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "5dc8100a-31d0-46c9-8100-b3855e721ae1"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "F41z.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Sensory retinal detachment",
+              "code": "42059000",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Retinal detachment NOS"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1988-10-11",
+        "assertedDate": "2020-01-14T11:46:08Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d9be0b56-52f4-44dc-8c67-c18df139c404",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/63c60abd-55da-407e-b6f3-18308f64865c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/22fd96da-7ca6-4165-92a7-c0be873eb802"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/63c60abd-55da-407e-b6f3-18308f64865c"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "d9be0b56-52f4-44dc-8c67-c18df139c404"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "F59..00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Hearing loss (disorder)",
+              "code": "15188001",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Hearing loss"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1991-10-08",
+        "assertedDate": "2020-01-14T11:46:09Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "69891e69-5839-4301-b42e-c1a2c65720dd",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/4497e0d2-c687-4827-a2e1-dfe9d419d0d3"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/436b60a7-f987-44ed-a26e-0118cdc8b102"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/4497e0d2-c687-4827-a2e1-dfe9d419d0d3"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "69891e69-5839-4301-b42e-c1a2c65720dd"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "R051.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Palpitations (finding)",
+              "code": "80313002",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "[D]Palpitations"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1992-03-01",
+        "assertedDate": "2020-01-14T11:46:09Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9731336b-be18-4e20-939a-90798cff6be1",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/33690223-6be7-4be7-b74c-2e371f6cd2be"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/f0623593-a5da-4dc9-9eae-09a6b89d3e48"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "9731336b-be18-4e20-939a-90798cff6be1"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "6859.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Cancer cervix - screening done (finding)",
+              "code": "268543007",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Cervical smear taken"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1993-08-04",
+        "assertedDate": "2020-01-14T11:46:09Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d6b81045-e762-4d27-88b2-67328791645d",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/bb4289aa-d3d7-4fa1-a284-60133751ee85"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/36626956-1721-4b40-82d5-aa38eb677213"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "d6b81045-e762-4d27-88b2-67328791645d"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "H33..00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Hyperreactive airway disease",
+              "code": "195967001",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Asthma"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1993-08-11",
+        "assertedDate": "2020-01-14T11:46:09Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "345afcee-a170-4cdd-b297-ef7192708bf6",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/d3968243-4184-4c92-bb17-701ac70a4596"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/431b66c4-2427-4075-9b9c-8cdbb289b424"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "345afcee-a170-4cdd-b297-ef7192708bf6"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "6859.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Cancer cervix - screening done (finding)",
+              "code": "268543007",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Cervical smear taken"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1993-11-08",
+        "assertedDate": "2020-01-14T11:46:09Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "77006692-9382-4261-b2ec-7193fac3f86a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/9992f254-3a8a-4b36-9f5c-1a5865b0e9b6"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/f68ba54b-334e-48ab-a2e4-04bcf2dee360"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "77006692-9382-4261-b2ec-7193fac3f86a"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "6859.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Cancer cervix - screening done (finding)",
+              "code": "268543007",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Cervical smear taken"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1994-11-14",
+        "assertedDate": "2020-01-14T11:46:10Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "95265593-cbfa-4b8f-a2a7-8d677d3a69ed",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/80b441de-73ab-47fc-ae27-f984a2132335"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/085fa3bf-4e5f-4d78-8c46-175f1dae2f1b"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/80b441de-73ab-47fc-ae27-f984a2132335"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "95265593-cbfa-4b8f-a2a7-8d677d3a69ed"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "F560.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Meniere's disease",
+              "code": "13445001",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Meniere's disease"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1998-10-08",
+        "assertedDate": "2020-01-14T11:46:10Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6372dd67-023f-403d-96ce-38f531d80e70",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/10189f8d-c62c-4e89-9358-26c239c20c99"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/5256b99a-64e1-4994-b8bd-ccfd26a896a7"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/10189f8d-c62c-4e89-9358-26c239c20c99"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "6372dd67-023f-403d-96ce-38f531d80e70"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "R090500",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Epigastric pain (finding)",
+              "code": "79922009",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "[D]Epigastric pain"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "1999-02-08",
+        "assertedDate": "2020-01-14T11:46:10Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "55f50d2c-25eb-4c51-90af-90ccc59dc5e6",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/2999d312-1907-4518-87ea-5fce04ebb5a3"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/ec458a68-acfd-4c0d-a356-c485cb9a109e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/2999d312-1907-4518-87ea-5fce04ebb5a3"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "55f50d2c-25eb-4c51-90af-90ccc59dc5e6"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "760H000",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Rigid esophagoscopy and biopsy (procedure)",
+              "code": "173671006",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Rig oesophagos biop lesion oes"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-01-02",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4cd5541a-fb43-41fe-93ee-81ce27b4d5a2",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/aef92a16-0fcb-485c-87a1-f7466c742bf8"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/ec458a68-acfd-4c0d-a356-c485cb9a109e"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/aef92a16-0fcb-485c-87a1-f7466c742bf8"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "4cd5541a-fb43-41fe-93ee-81ce27b4d5a2"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J101100",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Peptic oesophagitis",
+              "code": "266433003",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Reflux oesophagitis"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-01-02",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c6ddb93c-c5b1-4dba-bf6a-9a9c61995e01",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/c484ce8a-5e89-4bcb-b33f-04886f1d6936"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/ec458a68-acfd-4c0d-a356-c485cb9a109e"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "c6ddb93c-c5b1-4dba-bf6a-9a9c61995e01"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "761F.00",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Diagnostic fiberoptic endoscopic examination of upper gastrointestinal tract (procedure)",
+              "code": "265371001",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Diagn fibr endoscopy upper GIT"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-01-02",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "30cd4763-a16d-4762-85c8-8f5aa86d33c6",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/106a5376-3253-4c8a-94f2-1ed3b82a20cb"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/7b93592d-1b74-4c8d-a3d6-271b15451e85"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/106a5376-3253-4c8a-94f2-1ed3b82a20cb"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "30cd4763-a16d-4762-85c8-8f5aa86d33c6"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J101100",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Peptic oesophagitis",
+              "code": "266433003",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Reflux oesophagitis"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-07-11",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "06280328-6ddb-4b63-9773-a4b9d5687020",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/e152903e-b7e9-4243-9231-ad7e20d9e33c"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/7b93592d-1b74-4c8d-a3d6-271b15451e85"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/e152903e-b7e9-4243-9231-ad7e20d9e33c"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "06280328-6ddb-4b63-9773-a4b9d5687020"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J34..11",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "HH - Hiatus hernia",
+              "code": "84089009",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Hiatus hernia"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-07-11",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fb80d6ca-c306-4313-84dc-422c94d4b35f",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/cbaecb9c-52e6-4162-9b63-103c4f6c2038"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/960dbeb1-8599-4a73-be82-6ca05e0c0e13"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/cbaecb9c-52e6-4162-9b63-103c4f6c2038"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "fb80d6ca-c306-4313-84dc-422c94d4b35f"
+          }
+        ],
+        "clinicalStatus": "inactive",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "J10y412",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Gastrooesophageal reflux disease",
+              "code": "235595009",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Gastro-oesophageal reflux"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2003-08-12",
+        "assertedDate": "2020-01-14T11:46:11Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "951706d7-3485-4f6d-b3bc-8acadf4c9099",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProblemHeader-Condition-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Observation/478f671c-315f-481f-9b3c-33a3e075fc00"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
+            "valueReference": {
+              "reference": "Encounter/48090f1e-8ffb-418b-930a-14a2a35bfc5d"
+            }
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1",
+            "valueReference": {
+              "reference": "Observation/478f671c-315f-481f-9b3c-33a3e075fc00"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "951706d7-3485-4f6d-b3bc-8acadf4c9099"
+          }
+        ],
+        "clinicalStatus": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "B33..11",
+              "system": "http://read.info/readv2",
+              "userSelected": true
+            },
+            {
+              "display": "Basal cell carcinoma",
+              "code": "254701007",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Basal cell carcinoma"
+        },
+        "subject": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "onsetDateTime": "2004-06-24",
+        "assertedDate": "2020-01-14T11:46:12Z",
+        "asserter": {
+          "reference": "Practitioner/2534c576-aaed-4be3-a1f1-f2c25c60fa33"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "1e57d514-bd76-4d2d-8b02-a496af505cc4",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:10Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "1e57d514-bd76-4d2d-8b02-a496af505cc4"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/f4f23e49-a580-48c7-8a89-6ba60b7ad08e"
+        },
+        "date": "1995-10-23",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "ab624cfa-1c99-48ae-a875-b4e9bafd521c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:13Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "ab624cfa-1c99-48ae-a875-b4e9bafd521c"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/20f4dc21-554b-4e37-824c-694906250895"
+        },
+        "date": "1996-10-07",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:17Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "cbaf50ae-b02d-488a-9fe0-c2ae4f4eae01"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/d752f0d5-5a0e-45e6-9d57-58cda3b71868"
+        },
+        "date": "1997-10-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "1036ae9c-2985-44f2-9f7e-525dd046df4e",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:22Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "1036ae9c-2985-44f2-9f7e-525dd046df4e"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/1649d6bf-9fb8-46ba-86a3-83845cff715c"
+        },
+        "date": "1998-10-03",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/94199cb2-310e-45c0-a00a-8cee3a9a81ca"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "adb3de08-e841-436b-8a8e-918572df67e6",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:25Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6564.00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of booster dose of vaccine product containing only Clostridium tetani antigen",
+                  "code": "170333009",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Booster tetanus vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "adb3de08-e841-436b-8a8e-918572df67e6"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/fcd25980-f01f-4bca-a437-7494a1edd22d"
+        },
+        "date": "1999-08-09",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: TETANUS"
+          },
+          {
+            "text": "Stage: B"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ],
+        "vaccinationProtocol": [
+          {
+            "description": "TETANUS",
+            "doseStatus": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-vaccination-protocol-dose-status.html",
+                  "code": "count",
+                  "display": "Counts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "60219ff4-d9bd-4b6f-a458-53dda71d9e51",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:27Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "60219ff4-d9bd-4b6f-a458-53dda71d9e51"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/2b9f742a-8bd2-4252-a30c-632b40a1e2bb"
+        },
+        "date": "1999-10-02",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/56e6121a-04fc-416e-b0b4-194d442d664c"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "4ba09e4f-2b61-452d-a871-05c332a863ed",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:36Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "4ba09e4f-2b61-452d-a871-05c332a863ed"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/380ff2e2-eb3a-45aa-9a07-80ad2444b661"
+        },
+        "date": "2000-10-07",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/56e6121a-04fc-416e-b0b4-194d442d664c"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "61086123-4543-448a-b713-e88b62cb2df7",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:41Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "61086123-4543-448a-b713-e88b62cb2df7"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/65483155-7d77-4863-8838-80e11777a3f5"
+        },
+        "date": "2001-10-06",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/94199cb2-310e-45c0-a00a-8cee3a9a81ca"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "1c8bab1c-e7f4-47a1-ba69-593ef8abd387",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:46Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "1c8bab1c-e7f4-47a1-ba69-593ef8abd387"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/4d362665-0109-4ff8-8d0d-de3ccb9aa39c"
+        },
+        "date": "2002-09-28",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/56e6121a-04fc-416e-b0b4-194d442d664c"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "d0b976c9-d471-4325-8ad2-f02f5d7254d6",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
+            "valueDateTime": "2020-01-14T11:45:57Z"
+          },
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "65E..00",
+                  "system": "http://read.info/readv2",
+                  "userSelected": true
+                },
+                {
+                  "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+                  "code": "86198006",
+                  "system": "http://snomed.info/sct"
+                }
+              ],
+              "text": "Influenza vaccination"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://visionhealth.co.uk/identifier",
+            "value": "d0b976c9-d471-4325-8ad2-f02f5d7254d6"
+          }
+        ],
+        "status": "completed",
+        "notGiven": false,
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor",
+              "code": "UNK",
+              "display": "unknown"
+            }
+          ],
+          "text": "Unknown"
+        },
+        "patient": {
+          "reference": "Patient/50d03523-d957-495c-94f4-16ab755781cc"
+        },
+        "encounter": {
+          "reference": "Encounter/b3393175-e81d-4bbc-9ad8-90bcc99d6286"
+        },
+        "date": "2003-10-11",
+        "primarySource": false,
+        "practitioner": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/5ed270f0-cfa9-4b73-b4c8-ac72c1128df4"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/stu3/valueset-immunization-role.html",
+                  "code": "EP",
+                  "display": "Entering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/f5fcc925-af64-4602-b33f-402ac2dad4d5"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Type of Immunisation: FLU"
+          },
+          {
+            "text": "Stage: 0"
+          },
+          {
+            "text": "Status: Given"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3e9d65a0-ea7a-4779-abf1-fb835df9bcce",
+        "name": "Automation England",
+        "meta": {
+          "versionId": "1653041422",
+          "lastUpdated": "2022-05-20T10:10:22Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "B83621"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-OrganisationType-1",
+                "code": "gp-practice"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "use": "work",
+            "system": "email",
+            "value": "springfield@yaboo.com"
+          },
+          {
+            "use": "work",
+            "system": "phone",
+            "value": "07981543221"
+          },
+          {
+            "system": "other",
+            "value": "07982777777"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "SPRINGFIELD SURGERY, MAIN  14 ELEANOR STREET",
+              "GRIMSBY TOWN CENTRE"
+            ],
+            "city": "GRIMSBY",
+            "district": "N E LINCONSHIRE",
+            "postalCode": "DN32 9DT"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c4c9f629-a82b-410e-8e4d-22ed3198bd08",
+        "meta": {
+          "versionId": "1597325652",
+          "lastUpdated": "2020-08-13T13:34:12Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "335908096037"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "TUNNEY",
+            "given": [
+              "GENE"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "c4c9f629-a82b-410e-8e4d-22ed3198bd08",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/c4c9f629-a82b-410e-8e4d-22ed3198bd08"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3",
+        "meta": {
+          "versionId": "1578910745",
+          "lastUpdated": "2020-01-13T10:19:05Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Panth",
+            "given": [
+              "Mohak"
+            ],
+            "prefix": [
+              "Sister"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/8d80859a-3e71-4ea2-9fd4-da56ab4cb1c3"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "94199cb2-310e-45c0-a00a-8cee3a9a81ca",
+        "meta": {
+          "versionId": "1578910827",
+          "lastUpdated": "2020-01-13T10:20:27Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Onyx",
+            "given": [
+              "A"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "94199cb2-310e-45c0-a00a-8cee3a9a81ca",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/94199cb2-310e-45c0-a00a-8cee3a9a81ca"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "56e6121a-04fc-416e-b0b4-194d442d664c",
+        "meta": {
+          "versionId": "1578910736",
+          "lastUpdated": "2020-01-13T10:18:56Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Emankum",
+            "given": [
+              "Damini"
+            ],
+            "prefix": [
+              "Sister"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "56e6121a-04fc-416e-b0b4-194d442d664c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/56e6121a-04fc-416e-b0b4-194d442d664c"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "5ed270f0-cfa9-4b73-b4c8-ac72c1128df4",
+        "meta": {
+          "versionId": "1578910784",
+          "lastUpdated": "2020-01-13T10:19:44Z",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Opal",
+            "given": [
+              "A"
+            ],
+            "prefix": [
+              "Dr"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "5ed270f0-cfa9-4b73-b4c8-ac72c1128df4",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/5ed270f0-cfa9-4b73-b4c8-ac72c1128df4"
+        },
+        "organization": {
+          "reference": "Organization/3e9d65a0-ea7a-4779-abf1-fb835df9bcce"
+        }
+      }
+    }
+  ],
+  "id": "64abf672-5e31-41c2-ae1e-658189581b03"
+}

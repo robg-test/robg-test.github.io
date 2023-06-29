@@ -1,0 +1,15 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "patientNHSNumber",
+      "valueIdentifier": {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "7486020742"
+      }
+    },
+    {
+      "name": "includeReferrals"
+    }
+  ]
+}

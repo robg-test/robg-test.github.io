@@ -1,0 +1,89 @@
+{
+  "resourceType": "List",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Allergies and adverse reactions",
+  "code": {
+    "coding": [
+      {
+        "display": "Allergies and adverse reactions",
+        "system": "http://snomed.info/sct",
+        "code": "886921000000105"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/d76f7fdd-9223-44e8-81d9-bcc9ea5ec319"
+  },
+  "date": "2023-06-29T11:42:21+01:00",
+  "orderedBy": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/list-order",
+        "code": "system",
+        "display": "Sorted by System"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ClinicalSetting-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1060971000000108",
+            "display": "General practice service"
+          }
+        ]
+      }
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "AllergyIntolerance/3be38f94-e934-446a-bc94-97442de18d16"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/e81faf10-bb07-4b43-a38b-ba2130ab49e1"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/49bcda2d-4ef3-4def-a040-4efb2e8cf683"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/154a897a-83c0-4f4e-acca-7831fbe978b3"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/6ea07cb7-ca25-4ad6-a5f3-745288c0762e"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/d654d8f5-9625-4aac-8988-c080ae4b1ef3"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/2c8152b8-e3d4-407a-bfef-cc63717baf42"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/9321d5c3-7c23-4cff-a407-7b5d1594e49a"
+      }
+    }
+  ]
+}

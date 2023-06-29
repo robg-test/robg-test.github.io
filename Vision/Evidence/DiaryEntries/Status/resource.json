@@ -1,0 +1,44 @@
+{
+  "resourceType": "ProcedureRequest",
+  "id": "cd4d07d4-62cc-4cad-9b67-e55842d45c19",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-ProcedureRequest-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://visionhealth.co.uk/identifier",
+      "value": "cd4d07d4-62cc-4cad-9b67-e55842d45c19"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "code": {
+    "coding": [
+      {
+        "code": "8B31400",
+        "system": "http://read.info/readv2",
+        "userSelected": true
+      },
+      {
+        "display": "Review of medication (procedure)",
+        "code": "182836005",
+        "system": "http://snomed.info/sct"
+      }
+    ],
+    "text": "Medication review"
+  },
+  "subject": {
+    "reference": "Patient/61e14e2c-e2a2-4628-aad5-cc4a11bcb03a"
+  },
+  "context": {
+    "reference": "Encounter/7372eb5b-d591-4e3c-b3f7-5841a4606488"
+  },
+  "authoredOn": "2020-01-14T11:52:24Z",
+  "requester": {
+    "agent": {
+      "reference": "Practitioner/f3622e75-e309-4bec-814f-faa19c01f33a"
+    }
+  }
+}
