@@ -1,0 +1,30 @@
+{
+  "resourceType": "Specimen",
+  "id": "b0b5ce70-287a-11ed-afbd-06d7456b9d46",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Specimen-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "b0b5ce70-287a-11ed-afbd-06d7456b9d46"
+    }
+  ],
+  "accessionIdentifier": [
+    {
+      "value": "MI2302102X"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "receivedTime": "2001-03-30T12:23:00+01:00",
+  "collection": {
+    "quantity": {
+      "value": 10,
+      "unit": "mL"
+    }
+  }
+}

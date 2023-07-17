@@ -154,7 +154,7 @@
         "resourceType": "Patient",
         "id": "5de37cb4-3591-11ed-b860-0adf61f57152",
         "meta": {
-          "versionId": "d2e4fc7cae5b24ea8486cb0299751e21",
+          "versionId": "1894936062b6c3e06624dc8cd642120d",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -166,8 +166,7 @@
               {
                 "url": "registrationPeriod",
                 "valuePeriod": {
-                  "start": "2022-09-16",
-                  "end": "2023-12-08"
+                  "start": "2022-09-16"
                 }
               },
               {
@@ -176,8 +175,8 @@
                   "coding": [
                     {
                       "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
-                      "code": "T",
-                      "display": "Temporary"
+                      "code": "R",
+                      "display": "Regular"
                     }
                   ]
                 }

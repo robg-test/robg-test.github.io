@@ -1,0 +1,2874 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
+    ]
+  },
+  "id": "ca47764f-cde9-49cc-b70c-039b785a8be1",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "5de37cb4-3591-11ed-b860-0adf61f57152",
+        "meta": {
+          "versionId": "d2e4fc7cae5b24ea8486cb0299751e21",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1",
+            "extension": [
+              {
+                "url": "registrationPeriod",
+                "valuePeriod": {
+                  "start": "2022-09-16",
+                  "end": "2023-12-08"
+                }
+              },
+              {
+                "url": "registrationType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
+                      "code": "T",
+                      "display": "Temporary"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9727400809"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Haigh",
+            "prefix": [
+              "Miss"
+            ],
+            "given": [
+              "June"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+441454121202",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "+447777121202",
+            "use": "mobile"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-02-20",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "2 Kerry Hill",
+              "Low Moor"
+            ],
+            "city": "Leeds",
+            "district": "West Yorkshire",
+            "postalCode": "LS18 1AE",
+            "country": "GBR"
+          },
+          {
+            "use": "home",
+            "line": [
+              "1 SYCAMORE DRIVE",
+              "BURY",
+              "LANCS"
+            ],
+            "postalCode": "BL9 6TQ",
+            "country": "GBR"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "N82090",
+        "meta": {
+          "versionId": "0ee3a2e01efdc6841424aee9a0640395",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "N82090"
+          }
+        ],
+        "active": true,
+        "name": "Green Lane Medical Centre",
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "1 Main St"
+            ],
+            "city": "London",
+            "postalCode": "W1A 1AA",
+            "country": "GBR"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+442071231234",
+            "use": "work"
+          },
+          {
+            "system": "fax",
+            "value": "+442071231235",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "gp.connect.test.site@medicus.health",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-56cf8a66-4ee2-11ed-aef6-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/4928511000001103"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-18",
+          "end": "2023-01-09"
+        },
+        "dateAsserted": "2022-10-18",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 a day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "4928511000001103",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "4928511000001103",
+              "display": "Panadol Extra soluble tablets (Haleon UK Ltd)"
+            }
+          ],
+          "text": "Panadol Extra soluble tablets (GlaxoSmithKline Consumer Healthcare UK Ltd)"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 3
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 3
+              }
+            ]
+          }
+        ],
+        "status": "completed",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/4928511000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-10-18",
+            "end": "2023-01-09"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "56d0afc2-4ee2-11ed-b88e-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "56d0afc2-4ee2-11ed-b88e-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/4928511000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-10-18",
+            "end": "2022-11-14"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bb1e3008-ba45-11ec-9b67-0a58a9feac02",
+        "meta": {
+          "versionId": "cccda87b9adeca953628e6c5a0bb1bac",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/gmc-reference-number",
+            "value": "G1234567"
+          },
+          {
+            "system": "https://fhir.hl7.org.uk/Id/din-number",
+            "value": "123456"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Guiseley",
+            "given": [
+              "Andrew"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "02b9f725d01afa148076a717c2b56b3c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9e24452c-2e86-11ed-a3c8-0a58a9feac02",
+        "meta": {
+          "versionId": "16d36b6b9586a1938ee732064ae2fbed",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Jennifer Aherene",
+            "family": "Jennifer Aherene"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "05d270a8c2de855df0e6dc569353d47a",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "56d0b0b2-4ee2-11ed-89b4-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "56d0b0b2-4ee2-11ed-89b4-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/4928511000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-15",
+            "end": "2022-12-12"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "56d0b148-4ee2-11ed-834a-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "56d0b148-4ee2-11ed-834a-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/4928511000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-12-13",
+            "end": "2023-01-09"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-45fa9964-6414-11ed-aa32-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-45fa9964-6414-11ed-aa32-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1",
+            "valueDateTime": "2022-11-14"
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-45fa9964-6414-11ed-aa32-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-14",
+          "end": "2022-11-13"
+        },
+        "dateAsserted": "2022-11-14",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "319733000",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "319733000",
+              "display": "Warfarin 1mg tablets",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "46631201000001118"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-45fa9964-6414-11ed-aa32-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-45fa9964-6414-11ed-aa32-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-14",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-14",
+            "end": "2022-11-13"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "45fb92f6-6414-11ed-93ff-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "45fb92f6-6414-11ed-93ff-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-45fa9964-6414-11ed-aa32-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-14",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-14",
+            "end": "2022-11-14"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-2330d886-659e-11ed-93fe-0aea65a4494c",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/18448611000001103"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-16",
+          "end": "2023-02-07"
+        },
+        "dateAsserted": "2022-11-16",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "18448611000001103",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18448611000001103",
+              "display": "Tasigna 150mg capsules (Novartis Pharmaceuticals UK Ltd)",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "63325201000001113"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-2330d886-659e-11ed-93fe-0aea65a4494c",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 3
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 3
+              }
+            ]
+          }
+        ],
+        "status": "completed",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/18448611000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-16",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-16",
+            "end": "2023-02-07"
+          },
+          "quantity": {
+            "value": 112,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "233176d8-659e-11ed-9557-0aea65a4494c",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "233176d8-659e-11ed-9557-0aea65a4494c"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/18448611000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-16",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-16",
+            "end": "2022-12-13"
+          },
+          "quantity": {
+            "value": 112,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "233177b4-659e-11ed-aecf-0aea65a4494c",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "233177b4-659e-11ed-aecf-0aea65a4494c"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/18448611000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-16",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-12-14",
+            "end": "2023-01-10"
+          },
+          "quantity": {
+            "value": 112,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "2331784a-659e-11ed-98c5-0aea65a4494c",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "2331784a-659e-11ed-98c5-0aea65a4494c"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-2330d886-659e-11ed-93fe-0aea65a4494c"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/18448611000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-16",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-01-11",
+            "end": "2023-02-07"
+          },
+          "quantity": {
+            "value": 112,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-1a55d13c-675e-11ed-84c4-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-1a55d13c-675e-11ed-84c4-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1",
+            "valueDateTime": "2022-11-18"
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-1a55d13c-675e-11ed-84c4-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-18",
+          "end": "2022-12-08"
+        },
+        "dateAsserted": "2022-11-18",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "930411000001106",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "930411000001106",
+              "display": "Amoxicillin 500mg capsules (A A H Pharmaceuticals Ltd)",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "16305601000001119"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-1a55d13c-675e-11ed-84c4-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-1a55d13c-675e-11ed-84c4-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-18",
+            "end": "2022-12-08"
+          },
+          "quantity": {
+            "value": 63,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 21,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "1a564bc6-675e-11ed-9845-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "1a564bc6-675e-11ed-9845-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-1a55d13c-675e-11ed-84c4-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-18",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-18",
+            "end": "2022-12-08"
+          },
+          "quantity": {
+            "value": 63,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 21,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-fa02ef30-6c05-11ed-a456-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1",
+            "valueDateTime": "2022-12-08"
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-24"
+        },
+        "dateAsserted": "2022-11-24",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-fa02ef30-6c05-11ed-a456-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat",
+                  "display": "Repeat"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 6
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 2
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-24",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-24"
+          },
+          "quantity": {
+            "value": 42,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 14,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "fa042544-6c05-11ed-afa3-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "fa042544-6c05-11ed-afa3-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat",
+                  "display": "Repeat"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-24",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-24",
+            "end": "2022-12-07"
+          },
+          "quantity": {
+            "value": 42,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 14,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "fa04262a-6c05-11ed-8cb6-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "fa04262a-6c05-11ed-8cb6-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat",
+                  "display": "Repeat"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/930411000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-12-08",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 capsule - every 8 hours - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-12-08",
+            "end": "2022-12-21"
+          },
+          "quantity": {
+            "value": 42,
+            "unit": "capsule"
+          },
+          "expectedSupplyDuration": {
+            "value": 14,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-aa0e84a0-6c03-11ed-9323-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-aa0e84a0-6c03-11ed-9323-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1",
+            "valueDateTime": "2022-11-24"
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-aa0e84a0-6c03-11ed-9323-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-24"
+        },
+        "dateAsserted": "2022-11-24",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 twice a day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-aa0e84a0-6c03-11ed-9323-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-aa0e84a0-6c03-11ed-9323-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat",
+                  "display": "Repeat"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 6
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 1
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-24",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-24"
+          },
+          "quantity": {
+            "value": 56,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "aa0f9afc-6c03-11ed-bf77-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "aa0f9afc-6c03-11ed-bf77-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat",
+                  "display": "Repeat"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-aa0e84a0-6c03-11ed-9323-0a58a9feac02"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/319733000"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-24",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-24",
+            "end": "2022-12-21"
+          },
+          "quantity": {
+            "value": 56,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-8ccf2d08-6c09-11ed-89a0-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-8ccf2d08-6c09-11ed-89a0-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-8ccf2d08-6c09-11ed-89a0-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/22198011000001106"
+        },
+        "effectivePeriod": {
+          "start": "2022-11-24"
+        },
+        "dateAsserted": "2022-11-24",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "use as directed"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "22198011000001106",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22198011000001106",
+              "display": "CombiScreen 11SYS PLUS testing strips (Imported (Germany))",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "73264701000001119"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-8ccf2d08-6c09-11ed-89a0-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-8ccf2d08-6c09-11ed-89a0-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/22198011000001106"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-11-24",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/9e24452c-2e86-11ed-a3c8-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "use as directed"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-11-24"
+          },
+          "quantity": {
+            "value": 25,
+            "unit": "strip"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-295085e0-b382-11ed-ab0c-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-295085e0-b382-11ed-ab0c-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-295085e0-b382-11ed-ab0c-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/601311000001100"
+        },
+        "effectivePeriod": {
+          "start": "2023-02-23"
+        },
+        "dateAsserted": "2023-02-23",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 tablet - FOUR times a DAY - with or after food - oral"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "601311000001100",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "601311000001100",
+              "display": "Anadin Ibuprofen 200mg tablets (Haleon UK Ltd)"
+            }
+          ],
+          "text": "Anadin Ibuprofen 200mg tablets (GlaxoSmithKline Consumer Healthcare UK Ltd)"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-295085e0-b382-11ed-ab0c-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-295085e0-b382-11ed-ab0c-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/601311000001100"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2023-02-23",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet - FOUR times a DAY - with or after food - oral"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-02-23"
+          },
+          "quantity": {
+            "value": 28,
+            "unit": "tablet"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-8c5bafba-b392-11ed-bc9b-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-8c5bafba-b392-11ed-bc9b-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-8c5bafba-b392-11ed-bc9b-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/421411000001103"
+        },
+        "effectivePeriod": {
+          "start": "2023-02-23"
+        },
+        "dateAsserted": "2023-02-23",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "421411000001103",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "421411000001103",
+              "display": "Warfarin 1mg tablets (A A H Pharmaceuticals Ltd)",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "15985201000001111"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-8c5bafba-b392-11ed-bc9b-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-8c5bafba-b392-11ed-bc9b-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/421411000001103"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2023-02-23",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tablet twice a day"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-02-23"
+          },
+          "quantity": {
+            "value": 56,
+            "unit": "tablet"
+          },
+          "expectedSupplyDuration": {
+            "value": 28,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-1eacb50c-4ae4-11ed-b72a-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-1eacb50c-4ae4-11ed-b72a-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-by-another-organisation",
+                  "display": "Prescribed by another organisation"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-1eacb50c-4ae4-11ed-b72a-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/39732211000001107"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-13"
+        },
+        "dateAsserted": "2022-10-13",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "Not recorded"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "39732211000001107",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39732211000001107",
+              "display": "Co-amoxiclav 500mg/125mg tablets",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "1811921000001115"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-1eacb50c-4ae4-11ed-b72a-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-1eacb50c-4ae4-11ed-b72a-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/39732211000001107"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-13",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Not recorded"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-10-13",
+            "end": "2022-10-13"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-39147c6e-4ae3-11ed-9fa0-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-39147c6e-4ae3-11ed-9fa0-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-by-another-organisation",
+                  "display": "Prescribed by another organisation"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-39147c6e-4ae3-11ed-9fa0-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/27658006"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-13"
+        },
+        "dateAsserted": "2022-10-13",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "Not recorded"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "27658006",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27658006",
+              "display": "Amoxicillin-containing product"
+            }
+          ],
+          "text": "Amoxicillin"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-39147c6e-4ae3-11ed-9fa0-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-39147c6e-4ae3-11ed-9fa0-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "acute",
+                  "display": "Acute"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/27658006"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-13",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Not recorded"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-10-13",
+            "end": "2022-10-13"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ms-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-by-another-organisation",
+                  "display": "Prescribed by another organisation"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/27658006"
+        },
+        "effectivePeriod": {
+          "start": "2022-10-13"
+        },
+        "dateAsserted": "2022-10-13",
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "Not recorded"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "text": "No information available"
+            }
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/27658006"
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "authoredOn": "2022-10-13",
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Not recorded"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-10-13",
+            "end": "2022-10-13"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ListWarningCode-1",
+            "valueCode": "confidential-items"
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Medications and medical devices",
+        "code": {
+          "coding": [
+            {
+              "display": "Medications and medical devices",
+              "system": "http://snomed.info/sct",
+              "code": "933361000000108"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5de37cb4-3591-11ed-b860-0adf61f57152"
+        },
+        "note": [
+          {
+            "text": "Items excluded due to confidentiality and/or patient preferences."
+          }
+        ],
+        "entry": [
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-56cf8a66-4ee2-11ed-aef6-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-45fa9964-6414-11ed-aa32-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-2330d886-659e-11ed-93fe-0aea65a4494c"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-1a55d13c-675e-11ed-84c4-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-fa02ef30-6c05-11ed-a456-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-aa0e84a0-6c03-11ed-9323-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-8ccf2d08-6c09-11ed-89a0-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-295085e0-b382-11ed-ab0c-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-8c5bafba-b392-11ed-bc9b-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-1eacb50c-4ae4-11ed-b72a-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-39147c6e-4ae3-11ed-9fa0-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-2f4c99c8-4ae3-11ed-bbfa-0a58a9feac02"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

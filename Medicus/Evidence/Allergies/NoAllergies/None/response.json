@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "49f64d46-7dd2-4c55-854d-57d1e8cf7218",
+  "id": "0fc958d5-1d24-409f-89e9-a42ed581a607",
   "type": "collection",
   "entry": [
     {
@@ -13,7 +13,7 @@
         "resourceType": "Patient",
         "id": "b8d559f2-38c6-11ed-882d-068ed94095f6",
         "meta": {
-          "versionId": "d359ea596351a45e4214b40f042d632e",
+          "versionId": "5bd9f97bbc94e9925be784d37da1ea40",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -25,8 +25,7 @@
               {
                 "url": "registrationPeriod",
                 "valuePeriod": {
-                  "start": "2022-09-20",
-                  "end": "2023-12-08"
+                  "start": "2022-09-20"
                 }
               },
               {
@@ -35,8 +34,8 @@
                   "coding": [
                     {
                       "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
-                      "code": "T",
-                      "display": "Temporary"
+                      "code": "R",
+                      "display": "Regular"
                     }
                   ]
                 }

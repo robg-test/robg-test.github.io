@@ -1,0 +1,44 @@
+{
+  "resourceType": "Observation",
+  "id": "e274e876-2891-11ed-bf3b-0a38545b5f80",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://medicus.health",
+      "value": "e274e876-2891-11ed-bf3b-0a38545b5f80"
+    }
+  ],
+  "status": "unknown",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "37331000000100",
+        "display": "Comment note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/4d59c916-9726-11ec-af3f-0a58a9feac02"
+  },
+  "effectiveDateTime": "2022-09-09T00:00:00+01:00",
+  "issued": "2022-08-30T19:30:55+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+    }
+  ],
+  "comment": "test",
+  "related": [
+    {
+      "type": "derived-from",
+      "target": {
+        "reference": "Observation/b09a4984-287a-11ed-ab30-06d7456b9d46"
+      }
+    }
+  ]
+}

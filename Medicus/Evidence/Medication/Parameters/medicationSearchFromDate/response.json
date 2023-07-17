@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "a3f897d5-45e7-4c0b-95f3-7c8c2b0b067a",
+  "id": "1a236f10-2f7c-46f9-86db-455ea319d8e9",
   "type": "collection",
   "entry": [
     {
@@ -13,7 +13,7 @@
         "resourceType": "Patient",
         "id": "f880c240-544a-11ed-99f9-0a707f4e90e8",
         "meta": {
-          "versionId": "3a328925375cfd5ea2d1918d03e98e5e",
+          "versionId": "e8a79171252cdc0767c42e88f7a7102e",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -25,8 +25,7 @@
               {
                 "url": "registrationPeriod",
                 "valuePeriod": {
-                  "start": "2022-10-25",
-                  "end": "2023-12-08"
+                  "start": "2022-10-25"
                 }
               },
               {
@@ -35,8 +34,8 @@
                   "coding": [
                     {
                       "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
-                      "code": "T",
-                      "display": "Temporary"
+                      "code": "R",
+                      "display": "Regular"
                     }
                   ]
                 }
@@ -1135,7 +1134,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-category",
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
                 "code": "problem-list-item",
                 "display": "Problem List Item"
               }
@@ -1862,7 +1861,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-category",
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
                 "code": "problem-list-item",
                 "display": "Problem List Item"
               }

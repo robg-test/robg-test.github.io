@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "ae34d737-b2ba-4b41-adda-c24b257b4975",
+  "id": "d885e74a-67ed-4b93-a6df-1866e4f84bca",
   "type": "collection",
   "entry": [
     {
@@ -13,7 +13,7 @@
         "resourceType": "Patient",
         "id": "f880c240-544a-11ed-99f9-0a707f4e90e8",
         "meta": {
-          "versionId": "3a328925375cfd5ea2d1918d03e98e5e",
+          "versionId": "e8a79171252cdc0767c42e88f7a7102e",
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
           ]
@@ -25,8 +25,7 @@
               {
                 "url": "registrationPeriod",
                 "valuePeriod": {
-                  "start": "2022-10-25",
-                  "end": "2023-12-08"
+                  "start": "2022-10-25"
                 }
               },
               {
@@ -35,8 +34,8 @@
                   "coding": [
                     {
                       "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-RegistrationType-1",
-                      "code": "T",
-                      "display": "Temporary"
+                      "code": "R",
+                      "display": "Regular"
                     }
                   ]
                 }
@@ -1135,7 +1134,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-category",
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
                 "code": "problem-list-item",
                 "display": "Problem List Item"
               }
@@ -1454,7 +1453,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-category",
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
                 "code": "problem-list-item",
                 "display": "Problem List Item"
               }
@@ -2522,7 +2521,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-category",
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-ConditionCategory-1",
                 "code": "problem-list-item",
                 "display": "Problem List Item"
               }
