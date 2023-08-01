@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "d885e74a-67ed-4b93-a6df-1866e4f84bca",
+  "id": "6f593267-bfee-459d-afe2-f063b7d2391a",
   "type": "collection",
   "entry": [
     {
@@ -2435,19 +2435,6 @@
                 }
               ]
             }
-          },
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
-            "extension": [
-              {
-                "url": "numberOfRepeatPrescriptionsAllowed",
-                "valueUnsignedInt": 6
-              },
-              {
-                "url": "numberOfRepeatPrescriptionsIssued",
-                "valueUnsignedInt": 0
-              }
-            ]
           }
         ],
         "status": "active",
@@ -2674,19 +2661,6 @@
                 }
               ]
             }
-          },
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
-            "extension": [
-              {
-                "url": "numberOfRepeatPrescriptionsAllowed",
-                "valueUnsignedInt": 0
-              },
-              {
-                "url": "numberOfRepeatPrescriptionsIssued",
-                "valueUnsignedInt": 0
-              }
-            ]
           },
           {
             "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatusReason-1",

@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "3cb0d44c-ecfb-4522-91b5-c732bf1a6ae8",
+  "id": "481a7d4b-beca-4bd7-b5db-dd1cfe4d617c",
   "type": "collection",
   "entry": [
     {
@@ -767,7 +767,7 @@
           {
             "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1",
             "valueReference": {
-              "reference": "AllergyIntolerance/d638082e-462b-11ed-8ed0-068892d5e808"
+              "reference": "List/ended-allergies#d638082e-462b-11ed-8ed0-068892d5e808"
             }
           }
         ],
@@ -1223,6 +1223,7 @@
     },
     {
       "resource": {
+        "id": "ended-allergies",
         "resourceType": "List",
         "meta": {
           "profile": [

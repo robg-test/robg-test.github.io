@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "0fc958d5-1d24-409f-89e9-a42ed581a607",
+  "id": "f3cfa140-9f01-4a7b-b079-f13a29cf7cd6",
   "type": "collection",
   "entry": [
     {
@@ -197,6 +197,7 @@
     },
     {
       "resource": {
+        "id": "ended-allergies",
         "resourceType": "List",
         "meta": {
           "profile": [
