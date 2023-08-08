@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "b8bddca0-b5b3-4d91-b812-2c62e12f7c01",
+  "id": "17f97235-76b1-49e6-9c64-c9375ca7dbfd",
   "type": "collection",
   "entry": [
     {
@@ -910,6 +910,381 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
+        "id": "ms-b74ba0b8-3088-11ee-b19d-0ab754da38ea",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "ms-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescribingAgency-1",
+                  "code": "prescribed-at-gp-practice",
+                  "display": "Prescribed at GP practice"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+          }
+        ],
+        "medicationReference": {
+          "reference": "Medication/7547911000001105"
+        },
+        "effectivePeriod": {
+          "start": "2023-08-01",
+          "end": "2023-08-20"
+        },
+        "dateAsserted": "2023-08-01",
+        "subject": {
+          "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+        },
+        "taken": "unk",
+        "dosage": [
+          {
+            "text": "5"
+          }
+        ],
+        "note": [
+          {
+            "text": "Endorsements: ACBS"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Medication",
+        "id": "7547911000001105",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "7547911000001105",
+              "display": "Ensure Plus Juce liquid lemon & lime (Abbott Laboratories Ltd)",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "48403001000001114"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mr-b74ba0b8-3088-11ee-b19d-0ab754da38ea",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "mr-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 2
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 2
+              }
+            ]
+          }
+        ],
+        "status": "completed",
+        "intent": "plan",
+        "medicationReference": {
+          "reference": "Medication/7547911000001105"
+        },
+        "subject": {
+          "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+        },
+        "authoredOn": "2023-08-01",
+        "recorder": {
+          "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        },
+        "note": [
+          {
+            "text": "Endorsements: ACBS"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "5"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-08-01",
+            "end": "2023-08-20"
+          },
+          "quantity": {
+            "value": 55,
+            "unit": "ml"
+          },
+          "expectedSupplyDuration": {
+            "value": 10,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b74b9e24-3088-11ee-976b-0ab754da38ea",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "b74b9e24-3088-11ee-976b-0ab754da38ea"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/7547911000001105"
+        },
+        "subject": {
+          "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+        },
+        "authoredOn": "2023-08-01",
+        "recorder": {
+          "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        },
+        "note": [
+          {
+            "text": "Endorsements: ACBS"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "5"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-08-01",
+            "end": "2023-08-10"
+          },
+          "quantity": {
+            "value": 55,
+            "unit": "ml"
+          },
+          "expectedSupplyDuration": {
+            "value": 10,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bb1e3008-ba45-11ec-9b67-0a58a9feac02",
+        "meta": {
+          "versionId": "e5212ca891dba100458d6c99713b7aeb",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Andrew Guiseley",
+            "family": "Guiseley",
+            "given": [
+              "Andrew"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "02b9f725d01afa148076a717c2b56b3c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b7596d92-3088-11ee-be81-0ab754da38ea",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "b7596d92-3088-11ee-be81-0ab754da38ea"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescriptionType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1",
+                  "code": "repeat-dispensing",
+                  "display": "Repeat dispensing"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mr-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+          }
+        ],
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/7547911000001105"
+        },
+        "subject": {
+          "reference": "Patient/f880c240-544a-11ed-99f9-0a707f4e90e8"
+        },
+        "authoredOn": "2023-08-01",
+        "recorder": {
+          "reference": "Practitioner/454bb354-ce4a-11ed-9cf9-06867aa1dda6"
+        },
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+          }
+        },
+        "note": [
+          {
+            "text": "Endorsements: ACBS"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "5"
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-08-01",
+            "end": "2023-08-10"
+          },
+          "quantity": {
+            "value": 55,
+            "unit": "ml"
+          },
+          "expectedSupplyDuration": {
+            "value": 10,
+            "system": "http://unitsofmeasure.org",
+            "code": "d",
+            "unit": "day"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
         "id": "ms-d369e7b2-77e4-11ed-956f-0a58a9feac02",
         "identifier": [
           {
@@ -1775,6 +2150,19 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 6
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 0
+              }
+            ]
           }
         ],
         "status": "active",
@@ -2001,6 +2389,19 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1",
+            "extension": [
+              {
+                "url": "numberOfRepeatPrescriptionsAllowed",
+                "valueUnsignedInt": 0
+              },
+              {
+                "url": "numberOfRepeatPrescriptionsIssued",
+                "valueUnsignedInt": 0
+              }
+            ]
           },
           {
             "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatusReason-1",
@@ -4125,7 +4526,7 @@
         },
         "effectivePeriod": {
           "start": "2022-12-06",
-          "end": "2022-12-05"
+          "end": "2022-12-06"
         },
         "dateAsserted": "2022-12-06",
         "subject": {
@@ -4234,7 +4635,7 @@
         "dispenseRequest": {
           "validityPeriod": {
             "start": "2022-12-06",
-            "end": "2022-12-05"
+            "end": "2022-12-06"
           },
           "quantity": {
             "value": 21,
@@ -4353,6 +4754,11 @@
           {
             "item": {
               "reference": "MedicationStatement/ms-f500c670-0083-11ee-9c2d-0a8ce49d4524"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/ms-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
             }
           },
           {

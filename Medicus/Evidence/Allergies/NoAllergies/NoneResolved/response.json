@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
     ]
   },
-  "id": "f3cfa140-9f01-4a7b-b079-f13a29cf7cd6",
+  "id": "6a1a012d-8c63-4162-a293-76ca938f0614",
   "type": "collection",
   "entry": [
     {
@@ -158,6 +158,251 @@
     },
     {
       "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "c8f2cdd8-351e-11ee-86c4-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "c8f2cdd8-351e-11ee-86c4-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1"
+          ]
+        },
+        "verificationStatus": "unconfirmed",
+        "assertedDate": "2023-08-07T00:00:00+01:00",
+        "onsetDateTime": "2023-07-01",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "300912001",
+              "display": "Allergy to chocolate",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "3750259014"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "clinicalStatus": "active",
+        "patient": {
+          "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+        },
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "category": [
+          "medication"
+        ],
+        "note": [
+          {
+            "text": "Certainty: Likely"
+          }
+        ],
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/NullFlavor",
+                    "code": "NI",
+                    "display": "NoInformation"
+                  }
+                ]
+              }
+            ],
+            "severity": "mild"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bb1e3008-ba45-11ec-9b67-0a58a9feac02",
+        "meta": {
+          "versionId": "e5212ca891dba100458d6c99713b7aeb",
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+          ]
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "Andrew Guiseley",
+            "family": "Guiseley",
+            "given": [
+              "Andrew"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "02b9f725d01afa148076a717c2b56b3c",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "organization": {
+          "reference": "Organization/N82090"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1c9dfe26-351f-11ee-958b-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "1c9dfe26-351f-11ee-958b-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1"
+          ]
+        },
+        "verificationStatus": "unconfirmed",
+        "assertedDate": "2023-08-07T00:00:00+01:00",
+        "onsetDateTime": "2023-07-01",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "402747005",
+              "display": "Sweet's disease due to drug",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "2841118013"
+                    },
+                    {
+                      "url": "descriptionDisplay",
+                      "valueString": "Sweet disease due to drug"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "clinicalStatus": "active",
+        "patient": {
+          "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+        },
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "category": [
+          "medication"
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "9a1ce164-351f-11ee-b6f0-0a58a9feac02",
+        "identifier": [
+          {
+            "system": "https://medicus.health",
+            "value": "9a1ce164-351f-11ee-b6f0-0a58a9feac02"
+          }
+        ],
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-AllergyIntolerance-1"
+          ]
+        },
+        "verificationStatus": "unconfirmed",
+        "assertedDate": "2023-08-07T00:00:00+01:00",
+        "onsetDateTime": "2023-07-01",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "91935009",
+              "display": "Allergy to peanut",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                  "extension": [
+                    {
+                      "url": "descriptionId",
+                      "valueId": "3743500010"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "clinicalStatus": "active",
+        "patient": {
+          "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
+        },
+        "recorder": {
+          "reference": "Practitioner/bb1e3008-ba45-11ec-9b67-0a58a9feac02"
+        },
+        "category": [
+          "medication"
+        ],
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "25064002",
+                    "display": "Headache",
+                    "extension": [
+                      {
+                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
+                        "extension": [
+                          {
+                            "url": "descriptionId",
+                            "valueId": "41992010"
+                          },
+                          {
+                            "url": "descriptionDisplay",
+                            "valueString": "Head pain"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
         "resourceType": "List",
         "meta": {
           "profile": [
@@ -179,20 +424,23 @@
         "subject": {
           "reference": "Patient/b8d559f2-38c6-11ed-882d-068ed94095f6"
         },
-        "note": [
+        "entry": [
           {
-            "text": "Information not available."
-          }
-        ],
-        "emptyReason": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-ListEmptyReasonCode-1",
-              "code": "no-content-recorded",
-              "display": "No Content Recorded"
+            "item": {
+              "reference": "AllergyIntolerance/c8f2cdd8-351e-11ee-86c4-0a58a9feac02"
             }
-          ]
-        }
+          },
+          {
+            "item": {
+              "reference": "AllergyIntolerance/1c9dfe26-351f-11ee-958b-0a58a9feac02"
+            }
+          },
+          {
+            "item": {
+              "reference": "AllergyIntolerance/9a1ce164-351f-11ee-b6f0-0a58a9feac02"
+            }
+          }
+        ]
       }
     },
     {

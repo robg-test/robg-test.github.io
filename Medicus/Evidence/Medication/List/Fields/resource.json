@@ -38,6 +38,11 @@
     },
     {
       "item": {
+        "reference": "MedicationStatement/ms-b74ba0b8-3088-11ee-b19d-0ab754da38ea"
+      }
+    },
+    {
+      "item": {
         "reference": "MedicationStatement/ms-d369e7b2-77e4-11ed-956f-0a58a9feac02"
       }
     },
